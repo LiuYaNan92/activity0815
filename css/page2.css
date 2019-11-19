@@ -1,0 +1,134 @@
+body:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background:url("../images/p4_pic1.jpg") no-repeat -10000px -1000px,url("../images/p4_pic2.png") no-repeat -10000px -1000px,url("../images/p5_pic1.png") no-repeat -10000px -1000px,url("../images/p5_pic2.png") no-repeat -10000px -1000px;
+    width: 0;
+    height: 0;
+}
+
+.page2 .p2_bg1{
+    width:7.5rem;
+    /*height: 4.91rem;*/
+    height: 36.58%;
+    background-image:url("../images/p2_pic1.png");
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size:cover;
+    position: relative;
+    /*top:-36.58%;*/
+    transition:1s;
+
+}
+.page2 .p2_bg1 .dialog_box1{
+    width: 3.31rem;
+    height: 2.03rem;
+    background:url("../images/p2_pic5.png") no-repeat;
+    background-size:cover;
+    position: absolute;
+    top:0.81rem;
+    left:0.32rem;
+}
+.page2 .dialog_box1 .b_box{
+    width:2.4rem;
+    height: 1.58rem;
+    background:#fff;
+    position: absolute;
+    top:0.2rem;
+    left:0.2rem;
+}
+.page2 .dialog_box2 .b_box{
+    width:1.04rem;
+    height: 0.54rem;
+    background:#fff;
+    position: absolute;
+    top:0.98rem;
+    left:0.57rem;
+}
+
+.page2 .p2_bg2{
+    width:100%;
+    height:31.7%;
+    background-image:url("../images/p2_pic2.png");
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size:cover;
+    position: absolute;
+    top:33.7%;
+    left:15rem;
+    transition:1s;
+}
+.page2 .p2_bg2 .dialog_box2{
+    width:2.24rem;
+    height: 2.13rem;
+    background:url("../images/p2_pic6.png") no-repeat;
+    background-size:cover;
+    position: absolute;
+    top:1.9rem;
+    left:0.06rem;
+}
+.page2 .p2_bg3{
+    width:100%;
+    height:39.88%;
+    background-image: url('../images/p2_pic3.png');
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size:cover;
+    position: absolute;
+    right: 0;
+    top: 25.58%;
+    left:15rem;
+    transition:1s;
+}
+.page2 .p2_bg4{
+    width:7.5rem;
+    height: 31.86%;
+    background-image:url("../images/p2_pic4.png");
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size:cover;
+    position: absolute;
+    bottom:-31.86%;
+    transition:1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*.page2 .p2_bg4 .c_btn{
+    width:1.02rem;
+    height: 1.02rem;
+    background:url("../images/p24_pic4.png") no-repeat;
+    background-size:100% 100%;
+    animation:mymove 3s infinite;
+    animation-direction:alternate;!*轮流反向播放动画。*!
+    animation-timing-function: ease-in-out; !*动画的速度曲线*!
+
+}*/
+.page2 .p2_bg4 .c_btn{
+    width:0.91rem;
+    height: 1.13rem;
+    background:url("../images/p_click.png") no-repeat;
+    background-size:100% 100%;
+    animation:mymove 3s infinite;
+    animation-direction:alternate;/*轮流反向播放动画。*/
+    animation-timing-function: ease-in-out; /*动画的速度曲线*/
+    position: relative;
+    top:0.6rem;
+    left:0.5rem;
+}
+@keyframes mymove
+{
+    0%{
+        transform: scale(1);  /*开始为原始大小*/
+    }
+    25%{
+        transform: scale(1.1); /*放大1.1倍*/
+    }
+    50%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(1.1);
+    }
+
+}

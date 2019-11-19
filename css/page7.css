@@ -1,0 +1,47 @@
+
+.page7_bg{
+    width:100%;
+    height: 100%;
+    background-image:url("../images/p7_pic1.jpg");
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size:cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.page7_bg .dialog_box{
+    width:6.2rem;
+    height: 3.8rem;
+    background:url("../images/p7_pic2.png") no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    bottom:0.45rem;
+}
+.page7_bg .dialog_box .b_box{
+    width:6.2rem;
+    height: 3.8rem;
+    background:url("../images/p7_pic3.png") no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    top:0;left:0;
+}
+.page8_bg{
+    width:100%;
+    height: 100%;
+    background-image:url("../images/p8_pic1.jpg");
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size:cover;
+    position: fixed;
+    top:0;left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page8_bg .p8_btn{
+    width:3.85rem;
+    height: 1.26rem;
+    background:url("../images/p8_pic2.png") no-repeat;
+    background-size:100% 100%;
+}

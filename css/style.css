@@ -1,0 +1,438 @@
+body{
+    font-family: Helvetica;
+}
+
+
+.bg_img{
+    width:100%;
+    height: 100%;
+    background-image:url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+    position: fixed;
+    top:0;left:0;
+}
+.bg1{
+    width:3.36rem;
+    height: 2.9rem;
+    background: url("../images/pic1.png") no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    top:0;left:0;
+}
+.bg2{
+    width:2.88rem;
+    height: 2.4rem;
+    background:url("../images/pic2.png") no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    left:3.53rem;
+    top:0.4rem;
+}
+.bg3{
+    width:0.96rem;
+    height: 1.87rem;
+    background:url("../images/pic4.png") no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    top:0;right:0.44rem;
+}
+.bg4{
+    width:1.31rem;
+    height: 0.5rem;
+    background:url("../images/pic5.png") no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    top:1.6rem;
+    left:2.65rem;
+}
+.bg5{
+    width:5.15rem;
+    height: 4.67rem;
+    background:url("../images/pic3.png") no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    top:2.62rem;
+    left:1.11rem;
+}
+.tiShi{
+    position: absolute;
+    top:1.05rem;
+    left:0.6rem;
+    width:1.65rem;
+    height: 0.57rem;
+    background: url("../images/t_icon.png") no-repeat;
+    background-size:100% 100%;
+}
+
+.content{
+    width:100%;
+    position: absolute;
+    top:7.6rem;
+}
+.content .con_bg{
+    margin:0 auto;
+    width:6.1rem;
+    height: 2.85rem;
+    background:url("../images/bg2.png") no-repeat;
+    background-size:100% 100%;
+    display: flex;
+    justify-content: center;
+
+}
+ .showtime{
+    font-size:0.54rem;
+}
+ .contentTime{
+     margin-top:1.35rem;
+ }
+ .maskTime{
+    margin-top:1.75rem;
+ }
+.showtime .s_bg{
+    display: inline-block;
+    width:0.12rem;
+    height: 0.29rem;
+    background:url("../images/num_icon.png") no-repeat;
+    background-size:100% 100%;
+}
+.showtime .show_bg{
+    display: inline-block;
+    width:0.62rem;
+    height: 0.94rem;
+    background:url("../images/num_bg.png") no-repeat;
+    background-size:100% 100%;
+    text-align: center;
+    color:#fff;
+    line-height: 0.86rem;
+}
+
+.button{
+    width:100%;
+    position: absolute;
+    top:10.7rem;
+    text-align: center;
+}
+.button .btn{
+    display: inline-block;
+    width:2.23rem;
+    height: 2.29rem;
+}
+.button .startBtn{
+    background:url("../images/btn.png") no-repeat;
+    background-size:100% 100%;
+}
+.button .startBtn.stop{
+    background:url("../images/btn2.png") no-repeat;
+    background-size:100% 100%;
+}
+.button .startBtn.one_more{
+    background:url("../images/btn3.png") no-repeat;
+    background-size:100% 100%;
+}
+
+
+/*中奖弹窗*/
+.maskBox{
+    width:100%;
+    height: 100%;
+    background:rgba(0,0,0,0.5);
+    position: fixed;
+    top:0;left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+
+}
+.maskBox .closeBtn{
+    width:0.55rem;
+    height: 0.55rem;
+    background: url("../images/colse.png") no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    right: 0;
+    top:-1rem;
+}
+.maskBox .img{
+    width:5.89rem;
+    height:9.1rem;
+    background:url("../images/mask1.png") no-repeat;
+    background-size:100% 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.maskBox .img.active{
+    background:url("../images/mask2.png") no-repeat;
+    background-size:100% 100%;
+}
+.maskBox .addressBtn{
+    width:2.2rem;
+    height: 0.65rem;
+    background:url("../images/address.png") no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    bottom:0.69rem;
+}
+.maskBox .addressBtn.active{
+    background:url("../images/one_more.png") no-repeat;
+    background-size:100% 100%;
+}
+.lastText{
+    width:100%;
+    height: 1.48rem;
+    background:url("../images/bot_text.png") no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    top:13rem;left:0;
+}
+
+/*填写地址弹窗*/
+.addressBox{
+    width:100%;
+    height: 100%;
+    background:rgba(0,0,0,0.5);
+    position: fixed;
+    top:0;left:0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    z-index: 2;
+}
+.addressBox .add_bg{
+    width:5.89rem;
+    height: 7.61rem;
+    background:url("../images/a_mask.png") no-repeat;
+    background-size:100% 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+    position: fixed;
+}
+.addressBox .list_box{
+    margin-top:1rem;
+}
+.addressBox .add_bg .list{
+    display: flex;
+    align-items: center;
+    margin-bottom:0.3rem;
+}
+
+.addressBox .add_bg .list .name{
+    font-size:0.26rem;
+    color:#653e00;
+    font-weight: bold;
+}
+.addressBox .add_bg .list .input{
+    width:3.09rem;
+    padding:0 0.2rem;
+    height: 0.5rem;
+    background:none;
+    border:0;
+    border-bottom:0.02rem solid #653e00;
+    outline: none;
+}
+.addressBox .add_bg .list:nth-child(3){
+    justify-content: space-between;
+}
+.addressBox .add_bg .list .l_box{
+    width:1.12rem;
+    padding:0 0.1rem;
+    height: 0.48rem;
+    border:0.02rem solid #653e00;
+    border-radius:0.1rem;
+    display: flex;
+    line-height: 0.48rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.addressBox .add_bg .list .l_t{
+    display:block;
+}
+.addressBox .add_bg .list .l_icon{
+    display: inline-block;
+    width:0.15rem;
+    height: 0.09rem;
+    background: url("../images/arrow.png") no-repeat;
+    background-size:100% 100%;
+    position: relative;
+    right: 0.2rem;
+}
+.addressBox .add_bg .last{
+    display: block;
+}
+.addressBox .add_bg .last textarea{
+    width:4.02rem;
+    height: 1.84rem;
+    border:0.02rem solid #653e00;
+    resize:none;
+    background:none;
+    border-radius:0.1rem;
+    padding:0.2rem;
+    outline: none;
+}
+#myAddrs{
+    /*width:4.02rem;
+    border:0.02rem solid #653e00;
+    resize:none;
+    border-radius:0.1rem;
+    padding:0 0.2rem;
+    outline: none;
+    background:none;
+    height: 0.5rem;*/
+
+}
+.panel-hook{
+    font-size:0.24rem;
+}
+.addressBox .addBtn{
+    width:1.8rem;
+    height: 0.65rem;
+    background:url("../images/a_btn.png") no-repeat;
+    background-size:100% 100%;
+    margin:0 auto;
+}
+
+/*分享弹窗*/
+.shareBox{
+    width:100%;
+    height: 100%;
+    background:rgba(0,0,0,0.5);
+    position: fixed;
+    top:0;left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.shareBox .share_bg{
+    width:4.87rem;
+    height: 5.35rem;
+    background:url("../images/share2.png") no-repeat;
+    background-size:100% 100%;
+}
+.shareBox .share_bg.active{
+    background:url("../images/share1.png") no-repeat;
+    background-size:100% 100%;
+}
+.shareBox .share_icon{
+    width:0.94rem;
+    height: 0.97rem;
+    background:url("../images/share_icon.png") no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    top:0.77rem;right:0.67rem;
+}
+
+
+/*说明弹窗*/
+.explainBox{
+    width:100%;
+    height: 100%;
+    background:rgba(0,0,0,0.5);
+    background-size:100% 100%;
+    position: fixed;
+    top:0;left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.explainBox .ex_bg{
+    width:5.88rem;
+    height: 10.98rem;
+    background:url("../images/tishi_img.png") no-repeat;
+    background-size:100% 100%;
+    position: relative;
+}
+.explainBox .closeBtn{
+    width:0.55rem;
+    height: 0.55rem;
+    background: url("../images/colse.png") no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    right: 0;
+    top:0;
+}
+
+/*提交地址成功弹窗*/
+.mBox{
+    display: flex;
+    width:100%;
+    height: 100%;
+    position: fixed;
+    left:0;top:0;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.mBox .text{
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.1rem;
+    font-size: 0.36rem;
+    color: #fff;
+    background: rgba(0,0,0,0.8);
+    display: inline-block;
+}
+
+/*loading弹窗*/
+.loadingBox{
+    width:100%;
+    height: 100%;
+    background:rgba(0,0,0,0.5);
+    position: fixed;
+    top:0;left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loadingBox img{
+    width:0.8rem;
+}
+
+
+.gundongBox {
+    width: 100%;
+    height:0.5rem;
+    position: absolute;
+    top:0;
+    overflow: hidden;
+    background:rgba(0,0,0,0.5);
+    z-index: 1;
+
+}
+
+.gundongList {
+    position: absolute;
+    animation: geiwogun 30s linear infinite;
+    white-space: nowrap;
+}
+
+.gundongList span {
+    font-size: 0.26rem;
+    color: #fff;
+    padding: 0.05rem 0.1rem;
+    line-height: 0.5rem;
+}
+
+@keyframes geiwogun {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(-50%, 0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

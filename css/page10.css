@@ -1,0 +1,77 @@
+.p10_bg1{
+    width:100%;
+    height: 43.48%;
+    background-image:url("../images/p13_pic1.png");
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size:cover;
+    position: absolute;
+    top:-43.38%;
+    transition:1s;
+}
+.p10_bg2{
+    width:100%;
+    height:63.27%;
+    background-image:url("../images/p13_pic2.png");
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size:cover;
+    position: absolute;
+    top:18.6%;
+    left:15rem;
+    transition:1s;
+}
+.p10_bg3{
+    width:100%;
+    height:40.25%;
+    background-image:url("../images/p13_pic3.png");
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size:cover;
+    position: absolute;
+    bottom:-40.25%;
+    transition:1s;
+}
+.p10_bg3 .dialog_box{
+    width:3.11rem;
+    height: 3.11rem;
+    background:url("../images/p13_pic4.png") no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    left:1.6rem;
+    bottom:23.28%;
+}
+.p10_bg3 .dialog_box .b_box{
+    width:2.55rem;
+    height: 1.66rem;
+    background:#fff;
+    position: absolute;
+    top:0.52rem;
+    left:0.28rem;
+}
+.p11_bg{
+    width:100%;
+    height: 100%;
+    background-image:url("../images/p14_pic1.jpg");
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size:cover;
+    position: fixed;
+    top:0;left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p11_bg .p11_btn1{
+    width:3.85rem;
+    height: 1.28rem;
+    background:url("../images/p14_pic2.png") no-repeat;
+    background-size:100% 100%;
+}
+.p11_bg .p11_btn2{
+    width:3.85rem;
+    height: 1.28rem;
+    background:url("../images/p14_pic3.png") no-repeat;
+    background-size:100% 100%;
+    margin-top:0.5rem;
+}

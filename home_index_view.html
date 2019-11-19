@@ -1,0 +1,2379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>穿“月”记</title>
+    <link rel="stylesheet" href="/WinsMS/application/webapi/view/mid_autumn_lucky_draw/css/common.css?a=1">
+    <link rel="stylesheet" href="/WinsMS/application/webapi/view/mid_autumn_lucky_draw/css/mask.css?a=6">
+    <link rel="stylesheet" href="/WinsMS/application/webapi/view/mid_autumn_lucky_draw/css/page2.css?a=1">
+    <link rel="stylesheet" href="/WinsMS/application/webapi/view/mid_autumn_lucky_draw/css/page5.css">
+    <link rel="stylesheet" href="/WinsMS/application/webapi/view/mid_autumn_lucky_draw/css/page7.css">
+    <link rel="stylesheet" href="/WinsMS/application/webapi/view/mid_autumn_lucky_draw/css/page8.css">
+    <link rel="stylesheet" href="/WinsMS/application/webapi/view/mid_autumn_lucky_draw/css/page9.css">
+    <link rel="stylesheet" href="/WinsMS/application/webapi/view/mid_autumn_lucky_draw/css/page10.css">
+    <link rel="stylesheet" href="/WinsMS/application/webapi/view/mid_autumn_lucky_draw/css/page12.css">
+    <link rel="stylesheet" href="/WinsMS/application/webapi/view/mid_autumn_lucky_draw/css/page13.css">
+    <link rel="stylesheet" href="/WinsMS/application/webapi/view/mid_autumn_lucky_draw/css/page14.css">
+    <link rel="stylesheet" href="/WinsMS/application/webapi/view/mid_autumn_lucky_draw/css/page15.css">
+    <link rel="stylesheet" href="/WinsMS/application/webapi/view/mid_autumn_lucky_draw/css/page16.css?a=2">
+    <link rel="stylesheet" href="/WinsMS/application/webapi/view/mid_autumn_lucky_draw/css/page17.css">
+    <link rel="stylesheet" href="/WinsMS/application/webapi/view/mid_autumn_lucky_draw/css/idiom.css">
+    <link rel="stylesheet" href="/WinsMS/application/webapi/view/mid_autumn_lucky_draw/css/ancient_poetry.css">
+    <link rel="stylesheet" href="/WinsMS/application/webapi/view/mid_autumn_lucky_draw/css/style.css?a=6">
+    <link href="/WinsMS/application/webapi/view/mid_autumn_lucky_draw/css/layout.min.css" rel="stylesheet" />
+    <link href="/WinsMS/application/webapi/view/mid_autumn_lucky_draw/css/scs.min.css" rel="stylesheet" />
+    <title>Title</title>
+    <script src="/WinsMS/application/webapi/view/mid_autumn_lucky_draw/js/shipei.js"></script>
+    <script src="/WinsMS/application/webapi/view/mid_autumn_lucky_draw/js/jquery-2.0.0.min.js"></script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+    <script src="/WinsMS/application/webapi/view/mid_autumn_lucky_draw/js/vue.js"></script>
+    <script src="/WinsMS/application/webapi/view/mid_autumn_lucky_draw/js/preloadjs.min.js"></script>
+    <style>
+        iframe{
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+<audio id="music" src="https://www.win-east.cn/WinsMS/application/webapi/view/mid_autumn_lucky_draw/audio/beijing.mp3" controls="controls"  loop="true" style="display: none;"></audio>
+<audio id="jishiMusic" src="https://www.win-east.cn/WinsMS/application/webapi/view/mid_autumn_lucky_draw/audio/jishi.mp3" controls="controls"  style="display: none;"></audio>
+<audio id="chuanYue" src="https://www.win-east.cn/WinsMS/application/webapi/view/mid_autumn_lucky_draw/audio/chuanyue.mp3" controls="controls"   style="display: none;"></audio>
+<audio id="errorMusic" src="https://www.win-east.cn/WinsMS/application/webapi/view/mid_autumn_lucky_draw/audio/error.mp3" controls="controls"   style="display: none;"></audio>
+<audio id="dadouMusic" src="https://www.win-east.cn/WinsMS/application/webapi/view/mid_autumn_lucky_draw/audio/dadou.mp3" controls="controls"   style="display: none;"></audio>
+<audio id="clickMusic" src="https://www.win-east.cn/WinsMS/application/webapi/view/mid_autumn_lucky_draw/audio/dianji.mp3" controls="controls"   style="display: none;"></audio>
+<audio id="ptMusic" src="https://www.win-east.cn/WinsMS/application/webapi/view/mid_autumn_lucky_draw/audio/putong.mp3" controls="controls"   style="display: none;"></audio>
+<audio id="rightMusic" src="https://www.win-east.cn/WinsMS/application/webapi/view/mid_autumn_lucky_draw/audio/right.mp3" controls="controls"   style="display: none;"></audio>
+<audio id="carMusic1" src="https://www.win-east.cn/WinsMS/application/webapi/view/mid_autumn_lucky_draw/audio/qiche1.mp3" controls="controls"   style="display: none;"></audio>
+<audio id="carMusic2" src="https://www.win-east.cn/WinsMS/application/webapi/view/mid_autumn_lucky_draw/audio/qiche2.mp3" controls="controls"   style="display: none;"></audio>
+<!--<img class="page1_bg"  src="images/page1.jpg" alt="">-->
+<div class="musicBtn active"></div>
+<!--<div class="loading" >
+    <img src="/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/load.gif" alt="">
+</div>-->
+<div class="page1_bg">
+    <div class="click_btn"></div>
+</div>
+
+<div class="page2" style="display: none;">
+    <div class="p2_bg1" style="top:-36.58%">
+        <div class="dialog_box1" style="display: none;">
+            <div class="b_box"></div>
+        </div>
+    </div>
+    <div class="p2_bg2">
+        <div class="dialog_box2" style="display: none;">
+            <div class="b_box"></div>
+        </div>
+    </div>
+    <div class="p2_bg3"></div>
+
+    <div class="p2_bg4">
+        <div class="c_btn" style="display: none;"></div>
+    </div>
+</div>
+<div class="page3" style="display: none;">
+    <div class="page3_bg">
+        <div class="page3_bg2"></div>
+    </div>
+</div>
+<div class="page4" style="display: none;">
+    <div class="page4_bg">
+        <div class="click_btn" style="display: none;"></div>
+        <div class="dialog_box" style="display: none;">
+            <div class="b_box" style="display: none;"></div>
+        </div>
+    </div>
+
+</div>
+<div class="page5" style="display: none;">
+    <div class="p5_bg1">
+        <div class="dialog_box" style="display: none;">
+            <div class="b_box"></div>
+        </div>
+    </div>
+    <div class="p5_bg2">
+        <div class="dialog_box" style="display: none;">
+            <div class="b_box"></div>
+        </div>
+    </div>
+    <div class="p5_bg3"></div>
+    <div class="p5_bg4">
+        <div class="dialog_box" style="display: none;">
+            <div class="b_box"></div>
+        </div>
+    </div>
+    <div class="page6_bg" style="display: none;">
+        <div>
+            <div class="btn1" text="继续追月饼"></div>
+            <div class="btn2" text="先尝尝新品月饼"></div>
+        </div>
+    </div>
+</div>
+<div class="page7" style="display: none;">
+    <div class="page7_bg">
+        <div class="dialog_box" style="display: none;">
+            <div class="b_box"></div>
+        </div>
+        <div class="page8_bg" style="display: none;">
+            <div class="p8_btn"></div>
+        </div>
+    </div>
+</div>
+<div class="page8" style="display: none;">
+    <div class="p8_bg">
+        <div class="p8_bg1">
+            <div class="box1" text="冰淇淋月饼"></div>
+            <div class="box4" text="冰淇淋月饼"></div>
+            <div class="box2" text="小龙虾月饼"></div>
+            <div class="box5" text="小龙虾月饼"></div>
+            <div class="box3" text="冰皮月饼"></div>
+            <div class="box6" text="冰皮月饼"></div>
+        </div>
+        <div class="p8_bg2 ewmBtn">
+            <div class="ewm"></div>
+        </div>
+        <div class="p8_bg3 ewmBtn">
+            <div class="ewm"></div>
+        </div>
+        <div class="box_bg" style="display: none;">
+            <div>
+                <div class="box1_mask" style="display: none;">
+                    <div class="m_bg1 toNextPage"></div>
+                    <div class="m_bg2 toNextPage"></div>
+                </div>
+                <div class="box2_mask" style="display: none;">
+                    <div class="m_bg1 toNextPage"></div>
+                    <div class="m_bg2 toNextPage"></div>
+                </div>
+                <div class="box3_mask" style="display: none;">
+                    <div class="m_bg1 toNextPage"></div>
+                    <div class="m_bg2 toNextPage"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page9" style="display: none;">
+    <div class="p9_bg"></div>
+    <div class="p9_bg1"></div>
+    <div class="p9_bg2">
+        <div class="box1 box_error"></div>
+        <div class="box2 box_error"></div>
+        <div class="box3 box_error"></div>
+        <div class="box4 box_right"></div>
+    </div>
+    <div class="p9_error" style="display: none;">
+        <div class="e_bg1">
+            <div class="e_bg2" style="display: none;"></div>
+            <div class="e_bg3" style="display: none;">
+                <span style="display: none;"></span>
+            </div>
+        </div>
+        <div class="e_bg4"></div>
+    </div>
+    <div class="p9_mask" style="display: none;">
+        <div class="p9_mask_bg">
+            <div class="icon1 sureBtn"></div>
+            <div class="icon2 sureBtn"></div>
+        </div>
+    </div>
+</div>
+<div class="page10" style="display: none;">
+    <div class="p10_bg1"></div>
+    <div class="p10_bg2"></div>
+    <div class="p10_bg3">
+        <div class="dialog_box" style="display: none;">
+            <div class="b_box"></div>
+        </div>
+    </div>
+    <!--    虚化弹窗-->
+    <div class="p11_bg" style="display: none;">
+        <div class="btn_box">
+            <div class="p11_btn1" text="答题进入"></div>
+            <div class="p11_btn2" text="着急回家，硬闯"></div>
+        </div>
+    </div>
+</div>
+<!--成语闯关-->
+<div class="page11" style="display: none;">
+    <div id="app">
+        <div class="idiom_game" style="display: none;">
+            <div class="bg"></div>
+            <div class="g_bg1">
+                <div class="g_bg2">
+                    <span class="text1" :class="{active:answer1}"></span>
+                    <span class="text2" :class="{active:answer2}"></span>
+                    <span class="text3" :class="{active:answer3}"></span>
+                </div>
+            </div>
+            <!--        <div class="g_bg3"></div>-->
+            <div class="g_bg4"></div>
+            <div class="box_list">
+                <span class="icon" :data-id="item.id"  v-for="item in listArr" :class="[item.class,{active:item.isActive}]" @click="selectAnswer(item.id)"  :style="{opacity:item.isCheck?0:1}"></span>
+            </div>
+            <p class="botText">请按照顺序在下方框内选择合适字符，拼出题中成语 </p>
+        </div>
+        <div class="ancient_poetry" style="display: none;">
+            <div class="bg">
+                <div class="g_bg1">
+                    <div class="g_bg2">
+                        <span class="text1" :class="{active:pAnswer1}"></span>
+                        <span class="text2" :class="{active:pAnswer2}"></span>
+                        <span class="text3" :class="{active:pAnswer3}"></span>
+                        <span class="text4" :class="{active:pAnswer4}"></span>
+                        <span class="text5" :class="{active:pAnswer5}"></span>
+                    </div>
+                </div>
+                <div class="g_bg4"></div>
+                <div class="box_list">
+                    <span class="icon lanren" :data-id="item.id"  v-for="item in pListArr" :class="[item.class,{active:item.isActive}]" @click="ancientSelectAnswer(item.id)" :style="{opacity:item.isCheck?0:1}"  ></span>
+                </div>
+                <p class="botText">请按照顺序在下方框内选择合适文字，拼出题中古诗词 </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="page12" style="display: none;">
+    <div class="page11_bg"></div>
+    <div class="p12_bg" style="display: none;">
+        <div class="p12_btn">
+            <div class="p12_icon1" onclick="toAnswerList()"></div>
+            <div class="p12_icon2" onclick="toAnswerList()"></div>
+        </div>
+    </div>
+</div>
+
+<div class="page13" style="display: none;">
+    <div class="p13_bg1">
+        <div class="dialog_box" style="display: none;">
+            <div class="b_box"></div>
+        </div>
+    </div>
+    <div class="p13_bg2">
+        <div class="dialog_box" style="display: none;">
+            <div class="b_box"></div>
+        </div>
+        <div class="p13_btn" style="display: none"></div>
+        <div class="p13_box"></div>
+    </div>
+</div>
+
+<div class="page14" style="display: none;">
+    <div class="p14_bg1">
+        <div class="dialog_box1" style="display: none;">
+            <div class="b_box1"></div>
+        </div>
+        <div class="dialog_box2"  style="display: none;">
+            <div class="b_box2"></div>
+        </div>
+        <div class="dialog_box3" style="display: none;">
+            <div class="b_box3"></div>
+        </div>
+    </div>
+    <div class="p14_bg2">
+        <div class="dialog_box1" style="display: none;">
+            <div class="b_box1"></div>
+        </div>
+        <div class="dialog_box2" style="display: none;">
+            <div class="b_box2"></div>
+        </div>
+    </div>
+    <div class="p14_bg3">
+        <div class="dialog_box1" style="display: none;">
+            <div class="b_box1"></div>
+        </div>
+    </div>
+    <div class="p14_bottom"></div>
+    <div class="p15_bg" style="display: none;">
+        <div class="p15_box">
+            <div class="p15_btn1" text="帮助挑战"></div>
+            <div class="p15_btn2" text="不帮助，只要月饼"></div>
+        </div>
+    </div>
+</div>
+<div class="page15" style="display: none;">
+    <div class="p15_bg">
+        <div class="p15_btn">
+            <div class="p15_icon1"></div>
+            <div class="p15_icon2"></div>
+        </div>
+    </div>
+</div>
+
+<div class="page16" style="display: none;">
+    <div class="p16_bg">
+        <div class="dialog_box" style="display: none;">
+            <div class="bg1"></div>
+            <div class="bg2"></div>
+        </div>
+        <div class="p16_img1">
+            <div class="p16_btn"></div>
+        </div>
+        <div class="bot_bg" style="display: none;"></div>
+    </div>
+</div>
+<div class="page17" style="display: none;">
+    <div class="p17_bg">
+        <!--<div class="p17_bg1"></div>
+        <div class="p17_bg2"></div>-->
+        <div class="p17_bg3">
+            <div class="p17_btn"></div>
+        </div>
+        <div class="p17_bg4">
+            <div class="p17_text"></div>
+        </div>
+        <div class="p17_bg5"> </div>
+    </div>
+</div>
+
+<div class="mask1Box" style="display: none;">
+    <div class="mask_bg">
+        <div class="m_bg">
+            <div class="mCloseBtn toOtherPage"></div>
+            <div class="sureBtn toOtherPage"></div>
+        </div>
+    </div>
+</div>
+<div class="mask2Box" style="display: none;">
+    <div class="mask_bg">
+        <div class="m_bg2">
+            <div class="arrow"></div>
+        </div>
+
+    </div>
+</div>
+<div class="mask3Box" style="display: none;">
+    <div class="img"></div>
+</div>
+<!--<div class="loading" >
+    <img src="/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/load.gif" alt="">
+</div>-->
+<div class="loading-wrap  center loading">
+    <img class="load-gif" src="/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/load.gif" alt="" />
+    <span class="percent" style="position: absolute;margin-top:1.5rem;">0 %</span>
+</div>
+<div class="last_game" style="display: none;">
+<!--    <img class="bg_img" src="/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/bg.jpg" alt="">-->
+
+    <div class="bg_img"></div>
+    <div class="gundong">
+        <div class="gundongBox">
+            <div class="gundongList">
+
+            </div>
+        </div>
+    </div>
+    <div class="bg1"></div>
+    <div class="bg2"></div>
+    <div class="bg3"></div>
+    <div class="bg4"></div>
+    <div class="bg5"></div>
+    <div class="tiShi"></div>
+    <div class="content">
+        <div class="con_bg">
+            <div class="showtime contentTime">
+                <span class="show_bg s_min1">0</span>
+                <span class="show_bg s_min2">0</span>
+                <span class="s_bg"></span>
+                <span class="show_bg sec1">0</span>
+                <span class="show_bg sec2">0</span>
+                <span class="s_bg"></span>
+                <span class="show_bg ms1">0</span>
+                <span class="show_bg ms2">0</span>
+            </div>
+        </div>
+    </div>
+    <div class="button">
+        <div class="startBtn btn"></div>
+    </div>
+    <div class="lastText"></div>
+    <!--   中没中奖弹窗-->
+    <div class="maskBox maskBox1" style="display: none;">
+        <div class="img active">
+            <div class="closeBtn"></div>
+            <div class="showtime maskTime">
+                <span class="show_bg min1">0</span>
+                <span class="show_bg min2">0</span>
+                <span class="s_bg s_bg1"></span>
+                <span class="show_bg sec1">0</span>
+                <span class="show_bg sec2">0</span>
+                <span class="s_bg"></span>
+                <span class="show_bg ms1">0</span>
+                <span class="show_bg ms2">0</span>
+            </div>
+            <div class="addressBtn addressBtn1 active"></div>
+        </div>
+
+    </div>
+    <!--   中奖弹窗-->
+    <div class="maskBox maskBox2" style="display: none;">
+        <div class="img">
+            <div class="closeBtn"></div>
+            <div class="showtime maskTime">
+                <span class="show_bg min1">0</span>
+                <span class="show_bg min2">0</span>
+                <span class="s_bg s_bg1"></span>
+                <span class="show_bg sec1">0</span>
+                <span class="show_bg sec2">0</span>
+                <span class="s_bg"></span>
+                <span class="show_bg ms1">0</span>
+                <span class="show_bg ms2">0</span>
+            </div>
+            <div class="addressBtn addressBtn2"></div>
+        </div>
+
+    </div>
+    <!--    地址弹窗-->
+    <div class="addressBox" style="display: none;">
+        <div class="add_bg">
+            <div class="list_box">
+                <div class="list">
+                    <lable class="name">姓名：</lable>
+                    <input class="input" id="nameVal" type="text">
+                </div>
+                <div class="list">
+                    <lable class="name">电话：</lable>
+                    <input class="input" id="telNum" type="number">
+                </div>
+                <div class="list">
+                    <lable class="name">地区：</lable>
+                    <input type="text" class="input" readonly placeholder="请选择省市区" id="myAddrs" name="addr" data-key="1-36-37"  />
+                    <span class="l_icon"></span>
+                </div>
+                <div class="list last">
+                    <div class="name">输入详细地址：</div>
+                    <textarea id="address"></textarea>
+                </div>
+                <div class="addBtn" ></div>
+            </div>
+        </div>
+    </div>
+    <!--    分享弹窗-->
+    <div class="shareBox" style="display: none;">
+        <div class="share_bg"></div>
+        <div class="share_icon"></div>
+    </div>
+    <!--    说明弹窗-->
+    <div class="explainBox" style="display: flex;">
+        <div class="ex_bg">
+            <div class="closeBtn"></div>
+        </div>
+    </div>
+    <!--    提交地址成功界面-->
+    <div class="mBox" style="display: none;">
+        <span class="text"></span>
+    </div>
+</div>
+
+</body>
+
+<!--<script src="/WinsMS/application/webapi/view/mid_autumn_lucky_draw/js/last.js"></script>-->
+    <script>
+        //禁止苹果的上下滑动事件
+        document.body.addEventListener('touchmove', function (e) {
+            e.preventDefault(); //阻止默认的处理方式(阻止下拉滑动的效果)
+        }, {passive: false}); //passive 参数不能省略，用来兼容ios和android
+
+        $(function () {
+            let bgMusic = document.getElementById('music');//背景
+            let jishiMusic = document.getElementById('jishiMusic');//集市
+            let chuanYue = document.getElementById('chuanYue');//穿越音效
+            let errorMusic = document.getElementById('errorMusic');//答错音效
+            let dadouMusic = document.getElementById('dadouMusic');//打斗音效
+            let clickPlay = document.getElementById('clickMusic');//打斗音效
+            let ptMusic = document.getElementById('ptMusic');//落水声
+            let carMusic1 = document.getElementById('carMusic1');//汽车声
+            let carMusic2 = document.getElementById('carMusic2');//汽车声
+            //手机终端判断
+            let u = navigator.userAgent;
+            let isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+
+            let msFlag=true;
+            let musicFlag=false;//是否预加载成功
+            chuanYue.load();//穿越音效
+            jishiMusic.load();//集市音效
+            bgMusic.load();//背景
+            clickPlay.load();//点击
+            ptMusic.load();//落水声
+            carMusic1.load();//汽车声
+            carMusic2.load();//汽车声
+
+            errorMusic.load();//答错音效
+            dadouMusic.load();//打斗音效
+            if(isAndroid){
+                let mainfest = [
+                    // 音频
+                    { src: "https://www.win-east.cn/WinsMS/application/webapi/view/mid_autumn_lucky_draw/audio/beijing.mp3",id:'loop' },
+                    { src: "https://www.win-east.cn/WinsMS/application/webapi/view/mid_autumn_lucky_draw/audio/chuanyue.mp3",id:'loop2' },
+                    { src: "https://www.win-east.cn/WinsMS/application/webapi/view/mid_autumn_lucky_draw/audio/error.mp3",id:'loop3' },
+                    { src: "https://www.win-east.cn/WinsMS/application/webapi/view/mid_autumn_lucky_draw/audio/dadou.mp3",id:'loop4' },
+                    { src: "https://www.win-east.cn/WinsMS/application/webapi/view/mid_autumn_lucky_draw/audio/right.mp3",id:'loop5' },
+                    { src: "https://www.win-east.cn/WinsMS/application/webapi/view/mid_autumn_lucky_draw/audio/putong.mp3",id:'loop6' },
+                    { src: "https://www.win-east.cn/WinsMS/application/webapi/view/mid_autumn_lucky_draw/audio/qiche1.mp3",id:'loop7' },
+                    { src: "https://www.win-east.cn/WinsMS/application/webapi/view/mid_autumn_lucky_draw/audio/qiche2.mp3",id:'loop8' },
+                     { src: "/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/load.gif" },
+                     { src: "/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/music.png" },
+                     { src: "/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p_click.png" },
+                     { src: "/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/page3.gif" },
+                     { src: "/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/dadou.gif" },
+                     { src: "/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/page16.gif" },
+                     { src: "/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/page1.jpg" },
+                     { src: "/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p2_pic1.png" },
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p2_pic2.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p2_pic3.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p2_pic4.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p2_pic5.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p2_pic6.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p24_pic4.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p4_pic1.jpg'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p4_pic2.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p4_pic3.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p5_pic1.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p5_pic2.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p5_pic3.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p5_pic4.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p5_pic5.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p5_pic6.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p5_pic7.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p6_pic1.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p6_pic2.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p6_pic3.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p7_pic1.jpg'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p7_pic2.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p7_pic3.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p8_pic1.jpg'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p8_pic2.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p9_bg1.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p9_pic3.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p9_pic4.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/ewm.jpg'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p10_bjl.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p10_bp.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p10_xlx.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p11_pic1.jpg'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p11_pic2.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p11_pic3.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p11_pic4.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p11_pic5.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p11_pic6.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p11_pic7.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p11_pic8.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p11_pic9.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p11_pic10.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p12_pic1.jpg'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p12_pic2.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p13_pic1.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p13_pic2.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p13_pic3.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p13_pic4.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p14_pic1.jpg'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p14_pic2.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p14_pic3.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p16_pic1.jpg'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p16_pic2.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p16_pic3.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g_bg.jpg'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/c_pic1.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/a2.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/b2.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/d2.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/f_bg.jpg'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/f_icon.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/f_mask1.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/f_mask2.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g_pic2.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g_pic5.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p_colse.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p19_pic1.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p19_pic2.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p19_pic3.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p19_pic4.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p19_pic6.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p19_pic1.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p20_pic1.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p20_pic2.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p20_pic3.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p20_pic4.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p20_pic5.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p20_pic6.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p20_pic7.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p20_pic8.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p20_pic9.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p20_pic10.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p21_pic1.jpg'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p21_pic2.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p21_pic3.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g_pic1.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g_pic6.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g1.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g2.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g3.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g4.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g5.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g6.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g7.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g8.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g9.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g10.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g11.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g12.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g13.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g14.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g15.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g16.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g17.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g18.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p1.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p2.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p3.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p4.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p5.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p22_pic1.jpg'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p22_pic2.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p22_pic3.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p24_pic1.jpg'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p24_pic2.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p24_pic3.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p24_pic4.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p25_pic1.jpg'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p25_pic2.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p25_pic3.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p25_pic4.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p25_pic5.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p25_pic6.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/pic1.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/pic2.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/pic3.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/pic4.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/pic5.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/s1.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/s2.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/s3.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/s4.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/s5.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/s6.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/s7.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/s8.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/s9.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/s10.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/s11.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/s12.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/s13.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/s14.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/s15.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/s16.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/s17.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/s18.png'},
+                    {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/mask1.png'},
+                    {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/mask2.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/num_bg.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/num_icon.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/num_icon2.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/one_more.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/bg.jpg'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/bg2.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/btn.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/btn2.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/btn3.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/a_mask.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/a_btn.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/address.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/arrow.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/share_icon.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/share.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/share1.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/share2.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/t_icon.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/tishi_img.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/colse.png'},
+                     {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/bot_text.png'},
+
+                    // 视频
+                    // { src: "./video/video_01.mp4",id:'myVideo' }
+
+                ];
+                let preload = {
+                    // 预加载函数
+                    startPreload: function () {
+                        let preload = new createjs.LoadQueue(true);
+                        //为preloaded添加整个队列变化时展示的进度事件
+                        preload.addEventListener("progress", this.handleFileProgress);
+                        //注意加载音频文件需要调用如下代码行
+                        preload.installPlugin(createjs.SOUND);
+                        //为preloaded添加当队列完成全部加载后触发事件
+                        preload.addEventListener("complete", this.loadComplete);
+                        //设置最大并发连接数  最大值为10
+                        preload.setMaxConnections(1);
+                        preload.loadManifest(mainfest);
+                    },
+                    // 当整个队列变化时展示的进度事件的处理函数
+                    handleFileProgress: function (event) {
+                        $(".percent").text('请耐心等待...' + Math.ceil(event.loaded * 100) + "%");
+                    },
+                    // 处理preload添加当队列完成全部加载后触发事件
+                    loadComplete: function () {
+                       // alert('安卓手机加载完成');
+                        $(".loading").hide();
+                        bgMusic.play();//背景音乐播放
+                        jishiMusic.play();//集市音乐播放
+                        musicFlag=true;
+                        //  shuangjie.$pageLoad.addClass('hide').next().removeClass('hide')
+                    }
+                };
+
+                preload.startPreload();
+            }
+            let isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+            if (isiOS) {
+                let itimer;
+                document.body.addEventListener('focusin', function () {
+                    console.log('获取焦点')
+                //    alert('获取焦点')
+                    //setTimeout(function () {
+                        clearTimeout(itimer);
+                    //}, 200);
+                });
+                document.body.addEventListener('focusout', function () {
+                    console.log('失去焦点')
+                   // alert('失去焦点')
+                  //  itimer = setTimeout(function () {
+                        $("body").scrollTop(0)
+                   // }, 300);
+                });
+            }
+
+            //音乐图标点击播放暂停
+            $(".musicBtn").click(function () {
+                if(msFlag){
+                    bgMusic.pause();
+                    $(this).removeClass('active');
+                    msFlag=false;
+                }else{
+                    bgMusic.play();
+                    $(this).addClass('active');
+                    msFlag=true;
+                }
+            });
+
+
+            let openid = "{$userinfo['openid']}";
+            localStorage.setItem('openid',openid);
+            let url=encodeURI(window.location.href.split('#')[0]);
+            $.ajax({
+                url:'/WinsMS/getjssdkdata',
+                type:'get',
+                data:{
+                    web_auth_wechat_account_id:3,
+                    this_view_url:url,
+                },
+                dataType:'json',
+                success:function (data) {
+                    console.log(data);
+                    localStorage.setItem('appid',data.appId);
+                    localStorage.setItem('timestamp',data.timestamp);
+                    localStorage.setItem('nonceStr',data.nonceStr);
+                    localStorage.setItem('signature',data.signature);
+                    wx.config({
+                        debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+                        appId: data.appId, // 必填，公众号的唯一标识
+                        timestamp:data.timestamp, // 必填，生成签名的时间戳
+                        nonceStr:data.nonceStr, // 必填，生成签名的随机串
+                        signature:data.signature,// 必填，签名，见附录1
+                        jsApiList: [
+                            'checkJsApi',
+                            'onMenuShareTimeline',
+                            'onMenuShareAppMessage',
+                            'closeWindow',
+                            'hideAllNonBaseMenuItem',
+                            'chooseWXPay'
+                        ] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+                    });
+                }
+            });
+
+            wx.ready(function () {
+                //分享朋友圈
+                //手机终端判断
+                let u = navigator.userAgent;
+                let isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+                let wxBgMusic = document.getElementById('music');//背景
+                let wxJishiMusic = document.getElementById('jishiMusic');//集市
+                let ptMusic = document.getElementById('ptMusic');//落水声
+                let rightMusic = document.getElementById('rightMusic');//答完题
+                let carMusic1 = document.getElementById('carMusic1');//汽车声
+                let carMusic2 = document.getElementById('carMusic2');//汽车声
+                jishiMusic.load();//集市音效
+                bgMusic.load();//背景
+                ptMusic.load();//落水声
+                rightMusic.load();//答完题
+                carMusic1.load();//汽车声
+                carMusic2.load();//汽车声
+                if(isiOS){
+                    let mainfest = [
+                        // 音频
+                        { src: "https://www.win-east.cn/WinsMS/application/webapi/view/mid_autumn_lucky_draw/audio/beijing.mp3",id:'loop' },
+                        { src: "https://www.win-east.cn/WinsMS/application/webapi/view/mid_autumn_lucky_draw/audio/chuanyue.mp3",id:'loop2' },
+                        { src: "https://www.win-east.cn/WinsMS/application/webapi/view/mid_autumn_lucky_draw/audio/error.mp3",id:'loop3' },
+                        { src: "https://www.win-east.cn/WinsMS/application/webapi/view/mid_autumn_lucky_draw/audio/dadou.mp3",id:'loop4' },
+                        { src: "https://www.win-east.cn/WinsMS/application/webapi/view/mid_autumn_lucky_draw/audio/right.mp3",id:'loop5' },
+                        { src: "https://www.win-east.cn/WinsMS/application/webapi/view/mid_autumn_lucky_draw/audio/putong.mp3",id:'loop6' },
+                        { src: "https://www.win-east.cn/WinsMS/application/webapi/view/mid_autumn_lucky_draw/audio/qiche1.mp3",id:'loop7' },
+                        { src: "https://www.win-east.cn/WinsMS/application/webapi/view/mid_autumn_lucky_draw/audio/qiche2.mp3",id:'loop8' },
+                        { src: "/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/load.gif" },
+                        { src: "/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/music.png" },
+                        { src: "/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p_click.png" },
+                        { src: "/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/page3.gif" },
+                        { src: "/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/dadou.gif" },
+                        { src: "/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/page16.gif" },
+                        { src: "/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/page1.jpg" },
+                        { src: "/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p2_pic1.png" },
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p2_pic2.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p2_pic3.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p2_pic4.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p2_pic5.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p2_pic6.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p24_pic4.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p4_pic1.jpg'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p4_pic2.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p4_pic3.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p5_pic1.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p5_pic2.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p5_pic3.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p5_pic4.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p5_pic5.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p5_pic6.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p5_pic7.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p6_pic1.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p6_pic2.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p6_pic3.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p7_pic1.jpg'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p7_pic2.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p7_pic3.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p8_pic1.jpg'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p8_pic2.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p9_bg1.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p9_pic3.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p9_pic4.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/ewm.jpg'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p10_bjl.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p10_bp.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p10_xlx.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p11_pic1.jpg'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p11_pic2.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p11_pic3.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p11_pic4.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p11_pic5.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p11_pic6.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p11_pic7.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p11_pic8.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p11_pic9.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p11_pic10.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p12_pic1.jpg'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p12_pic2.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p13_pic1.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p13_pic2.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p13_pic3.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p13_pic4.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p14_pic1.jpg'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p14_pic2.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p14_pic3.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p16_pic1.jpg'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p16_pic2.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p16_pic3.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g_bg.jpg'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/c_pic1.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/a2.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/b2.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/d2.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/f_bg.jpg'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/f_icon.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/f_mask1.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/f_mask2.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g_pic2.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g_pic5.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p_colse.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p19_pic1.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p19_pic2.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p19_pic3.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p19_pic4.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p19_pic6.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p19_pic1.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p20_pic1.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p20_pic2.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p20_pic3.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p20_pic4.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p20_pic5.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p20_pic6.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p20_pic7.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p20_pic8.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p20_pic9.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p20_pic10.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p21_pic1.jpg'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p21_pic2.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p21_pic3.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g_pic1.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g_pic6.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g1.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g2.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g3.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g4.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g5.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g6.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g7.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g8.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g9.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g10.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g11.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g12.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g13.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g14.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g15.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g16.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g17.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/g18.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p1.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p2.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p3.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p4.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p5.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p22_pic1.jpg'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p22_pic2.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p22_pic3.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p24_pic1.jpg'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p24_pic2.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p24_pic3.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p24_pic4.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p25_pic1.jpg'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p25_pic2.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p25_pic3.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p25_pic4.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p25_pic5.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/p25_pic6.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/pic1.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/pic2.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/pic3.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/pic4.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/pic5.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/s1.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/s2.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/s3.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/s4.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/s5.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/s6.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/s7.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/s8.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/s9.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/s10.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/s11.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/s12.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/s13.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/s14.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/s15.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/s16.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/s17.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/s18.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/mask1.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/mask2.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/num_bg.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/num_icon.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/num_icon2.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/one_more.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/bg.jpg'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/bg2.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/btn.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/btn2.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/btn3.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/a_mask.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/a_btn.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/address.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/arrow.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/share_icon.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/share.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/share1.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/share2.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/t_icon.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/tishi_img.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/colse.png'},
+                        {src:'/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/bot_text.png'},
+
+                        // 视频
+                        // { src: "./video/video_01.mp4",id:'myVideo' }
+
+                    ];
+                    let preload = {
+                        // 预加载函数
+                        startPreload: function () {
+                            let preload = new createjs.LoadQueue(true);
+                            //为preloaded添加整个队列变化时展示的进度事件
+                            preload.addEventListener("progress", this.handleFileProgress);
+                            //注意加载音频文件需要调用如下代码行
+                            preload.installPlugin(createjs.SOUND);
+                            //为preloaded添加当队列完成全部加载后触发事件
+                            preload.addEventListener("complete", this.loadComplete);
+                            //设置最大并发连接数  最大值为10
+                            preload.setMaxConnections(1);
+                            preload.loadManifest(mainfest);
+                        },
+                        // 当整个队列变化时展示的进度事件的处理函数
+                        handleFileProgress: function (event) {
+                            $(".percent").text('请耐心等待...' + Math.ceil(event.loaded * 100) + "%");
+                        },
+                        // 处理preload添加当队列完成全部加载后触发事件
+                        loadComplete: function () {
+                         //  alert('苹果手机加载完成');
+                            $(".loading").hide();
+                            wxBgMusic.play();//背景音乐播放
+                            wxJishiMusic.play();//集市音乐播放
+                        }
+                    };
+
+                    preload.startPreload();
+                }
+
+                wx.onMenuShareTimeline({
+                    title: '穿“月”记', // 分享标题
+                    link: "https://www.win-east.cn/WinsMS/maldview", // 分享链接,将当前登录用户转为puid,以便于发展下线
+                    imgUrl: 'https://www.win-east.cn/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/share.png', // 分享图标
+                    success: function () {
+                        // 用户确认分享后执行的回调函数
+                        // alert('分享成功');
+                        let formData = new FormData();
+                        let openid=localStorage.getItem('openid');
+                        formData.append('openid', openid);
+                        $.ajax({
+                            url: 'https://www.win-east.cn/WinsMS/maldshare',
+                            type: 'POST',
+                            data: formData,
+                            contentType: false,
+                            processData: false,
+                            dataType: 'json',
+                            async: false,
+                            success: function (res) {
+                                console.log(res);
+                                if(res.code==1001){
+                                    $(".shareBox").hide();
+                                }
+                            }
+                        })
+                    },
+                    cancel: function () {
+                        // 用户取消分享后执行的回调函数
+                    }
+                });
+                //分享朋友
+                wx.onMenuShareAppMessage({
+                    title: '穿“月”记', // 分享标题
+                    desc: '点击体验奇妙中秋穿“月”记！还能领取科学家庭育儿给您送的中秋大礼包！', // 分享描述
+                    link: '', // 分享链接
+                    imgUrl: 'https://www.win-east.cn/WinsMS/application/webapi/view/mid_autumn_lucky_draw/images/share.png', // 分享图标
+                    success: function () {
+                        // 用户确认分享后执行的回调函数
+                        // alert('分享成功')
+                        let formData = new FormData();
+                        let openid=localStorage.getItem('openid');
+                        formData.append('openid', openid);
+                        console.log(openid)
+                        $.ajax({
+                            url: '/WinsMS/maldshare',
+                            type: 'POST',
+                            data: formData,
+                            contentType: false,
+                            processData: false,
+                            dataType: 'json',
+                            async: false,
+                            success: function (res) {
+                                console.log(res);
+                                if(res.code==1001){
+                                    $(".shareBox").hide();
+                                }
+                            }
+                        })
+                    },
+                    cancel: function () {
+                        //alert('分享取消')
+                        // 用户取消分享后执行的回调函数
+                    }
+                });
+                wx.error(function(res){
+                    alert(JSON.stringify(res))
+                    console.log(JSON.stringify(res))
+                    // config信息验证失败会执行error函数，如签名过期导致验证失败，具体错误信息可以打开config的debug模式查看，也可以在返回的res参数中查看，对于SPA可以在这里更新签名。
+                    alert("errorMSG:"+res);
+                });
+
+            });
+            console.log(openid);
+            //二维码点击
+            $(".ewmBtn").click(function () {
+                $(".mask3Box").show();
+            });
+            $(".mask3Box").click(function () {
+                $(".mask3Box").hide();
+            })
+            //第一页点击
+            $(".page1_bg").click(function () {
+                jishiMusic.pause();//集市音效暂停
+                $(this).hide();
+                $(".page2").show();
+                //第二页动画
+                $('.p2_bg1').css('top','0');//第一张图
+                setTimeout(function () {
+                    $(".page2 .dialog_box1").fadeIn();//第一个对话框
+                },1000);
+                setTimeout(function () {
+                    $(".page2 .dialog_box1 .b_box").fadeOut();//第一句话
+                },1500);
+                setTimeout(function () {
+                    $(".p2_bg2").css('left','0');//第二张图
+                },2000);
+                setTimeout(function () {
+                    $(".page2 .dialog_box2").fadeIn();//第二个对话框
+                },3000);
+                setTimeout(function () {
+                    $(".page2 .dialog_box2 .b_box").fadeOut();//第二句话
+                },3500);
+                setTimeout(function () {
+                    $(".p2_bg3").css('left','0');//第三张图
+                },4000);
+                setTimeout(function () {
+                    $(".p2_bg4").css('bottom','0');//第四张图
+                    ptMusic.play();//落水声
+                },4750);
+                setTimeout(function () {
+                    ptMusic.pause();//落水声暂停
+                    $(".c_btn").fadeIn();//第四张图
+                },6250);
+            });
+            //第二页点击
+            $(".p2_bg4 ").click(function () {
+                //bgMusic.pause();//背景暂停
+                $('.page2').hide();
+                $('.page3').show();
+                chuanYue.currentTime=0;
+                chuanYue.play();//穿越音效
+                setTimeout(function () {
+                    $(".page3").hide();//第三页隐藏
+                    chuanYue.pause();//穿越音效暂停
+                    $('.page4').show();
+                  //  bgMusic.play();//背景音乐播放
+                    carMusic1.play();//汽车1
+                    setTimeout(function(){
+                        carMusic2.play();//汽车1
+                    },1000);
+                    setTimeout(function(){
+                        carMusic1.play();//汽车1
+                    },2000);
+                    setTimeout(function(){
+                        carMusic2.play();//汽车1
+                    },3000);
+
+                },5000);
+                setTimeout(function () {
+                    $(".page4 .dialog_box").fadeIn(1000);
+                },6000);
+                setTimeout(function () {
+                    $(".page4 .b_box").fadeIn(1000);
+                },6500);
+                setTimeout(function () {
+                    $(".page4 .click_btn").fadeIn(1000);
+                },7000);
+            });
+            //第四页点击
+            $(".page4_bg").click(function () {
+                carMusic1.pause();//汽车1
+                carMusic2.pause();//汽车1
+                $('.page4').hide();
+                $('.page5').show();
+                $(".p5_bg1").css('top',0);//第一张图
+                setTimeout(function () {
+                    $('.p5_bg1 .dialog_box').fadeIn();//第一个对话框
+                },500);
+                setTimeout(function () {
+                    $('.p5_bg1 .b_box').fadeOut();//第一句话
+                },1000);
+                setTimeout(function () {
+                    $('.p5_bg2').css('left',0);//第二张图
+                },1500);
+                setTimeout(function () {
+                    $('.p5_bg2 .dialog_box').fadeIn();//第二个对话框
+                },2500);
+                setTimeout(function () {
+                    $('.p5_bg2 .b_box').fadeOut();//第二句话
+                },3000);
+                setTimeout(function () {
+                    $('.p5_bg3').css('top','37.48%');//第三张图
+                },3500);
+                setTimeout(function () {
+                    $('.p5_bg4').css('bottom',0);//第四张图
+                },4500);
+                setTimeout(function () {
+                    $('.p5_bg4 .dialog_box').fadeIn();//第三个对话框
+                },5000);
+                setTimeout(function () {
+                    $('.p5_bg4 .b_box').fadeOut();//第三句话
+                },5500);
+                setTimeout(function () {
+                    $(".page6_bg").fadeIn(1000);
+                },7000);
+            });
+            //继续追月饼
+            $(".page6_bg .btn1").click(function () {
+                $(".page5").hide();
+                $(".page7").show();
+                setTimeout(function () {
+                    $(".page7 .dialog_box").fadeIn(1000);//对话框
+                },500);
+                setTimeout(function () {
+                    $(".page7 .b_box").fadeIn(1000);//对话内容
+                },1000);
+                setTimeout(function () {
+                    $(".page8_bg").fadeIn(1000);//弹窗
+                },2000);
+
+            });
+            $(".page8_bg .p8_btn").click(function () {
+                $(".page7").hide();
+                $(".page8").show();
+            })
+            //先尝尝新品月饼
+            $(".page6_bg .btn2").click(function () {
+                $(".page5").hide();
+                $(".page8").show();
+            });
+            //冰淇淋月饼
+            $(".p8_bg .box1").click(function () {
+                clickPlay.currentTime=0;
+                clickPlay.play();//点击音效
+              //alert('点击月饼')
+                $(".p8_bg .p8_bg1").hide();
+                $(".p8_bg .box_bg").fadeIn();
+                $(".p8_bg .box1_mask").css('display','flex');
+            });
+            $(".p8_bg .box4").click(function () {
+                clickPlay.currentTime=0;
+                clickPlay.play();//点击音效
+              //  alert('点击月饼')
+                $(".p8_bg .p8_bg1").hide();
+                $(".p8_bg .box_bg").fadeIn();
+                $(".p8_bg .box1_mask").css('display','flex');
+            });
+            //小龙虾月饼
+            $(".p8_bg .box2").click(function () {
+                clickPlay.currentTime=0;
+                clickPlay.play();//点击音效
+                $(".p8_bg .p8_bg1").hide();
+                $(".p8_bg .box_bg").fadeIn();
+                $(".p8_bg .box2_mask").css('display','flex');
+            });
+            $(".p8_bg .box5").click(function () {
+                clickPlay.currentTime=0;
+                clickPlay.play();//点击音效
+                $(".p8_bg .p8_bg1").hide();
+                $(".p8_bg .box_bg").fadeIn();
+                $(".p8_bg .box2_mask").css('display','flex');
+            });
+            //冰皮月饼
+            $(".p8_bg .box3").click(function () {
+                clickPlay.currentTime=0;
+                clickPlay.play();//点击音效
+                $(".p8_bg .p8_bg1").hide();
+                $(".p8_bg .box_bg").fadeIn();
+                $(".p8_bg .box3_mask").css('display','flex');
+            });
+            $(".p8_bg .box6").click(function () {
+                clickPlay.currentTime=0;
+                clickPlay.play();//点击音效
+                $(".p8_bg .p8_bg1").hide();
+                $(".p8_bg .box_bg").fadeIn();
+                $(".p8_bg .box3_mask").css('display','flex');
+            });
+            //其他垃圾
+            $(".page9 .box_error").click(function () {
+                $(".page9 .p9_error").fadeIn(1000);
+                setTimeout(function () {
+                    $(".page9 .e_bg2").fadeIn();
+                },1000);
+                setTimeout(function () {
+                    $(".page9 .e_bg3").fadeIn();
+                },1500);
+                setTimeout(function () {
+                    $(".page9 .e_bg3 span").fadeIn();
+                },2000);
+                setTimeout(function () {
+                    $(".page9 .p9_mask").fadeIn();
+                },7000)
+            });
+            //答错再选一次
+            $(".page9 .sureBtn").click(function () {
+                $(".p9_error").hide();
+                $(".p9_mask").hide();
+                $(".page9 .e_bg2").hide();
+                $(".page9 .e_bg3").hide();
+                $(".page9 .e_bg3 span").hide();
+            });
+            //答对跳转，嘉年华
+            $(".page9 .box_right").click(function () {
+                $(".page9").hide();
+                $(".page10").show();
+                $(".p10_bg1").css('top',0);//第一张图
+                setTimeout(function () {
+                    $(".p10_bg2").css('left',0);//第二张图
+                },1000);
+                setTimeout(function () {
+                    $(".p10_bg3").css('bottom',0);//第三张图
+                },2000);
+                setTimeout(function () {
+                    $(".p10_bg3 .dialog_box").fadeIn(1000);//对话框
+                },3000);
+                setTimeout(function () {
+                    $(".p10_bg3 .b_box").fadeOut(1000);//对话框内容
+                },3500);
+                setTimeout(function () {
+                    $(".p11_bg").fadeIn(1000);//弹窗
+                },5300);
+            });
+            //答题进入
+            $(".p11_btn1").click(function () {
+                //bgMusic.pause();//背景暂停
+                //gameMusic.currentTime=0;
+               // gameMusic.play();//游戏音效
+                $('.page10').hide();
+                $(".page11").show();
+                $(".page11 .idiom_game").show();//成语闯关
+
+            });
+            //硬闯
+            $(".page10 .p11_btn2").click(function () {
+                $('.page10').hide();
+                $('.page12').show();
+                //bgMusic.pause();//背景暂停
+                dadouMusic.currentTime=0;
+                dadouMusic.play();//打斗音效
+                setTimeout(function () {
+                    $('.page12 .p12_bg').show();
+                    dadouMusic.pause();//打斗音效
+                },5000)
+            });
+            //点击进入心愿屋
+            $(".p13_box").click(function () {
+                $(".page13").hide();
+                $(".page14").show();
+                $(".p14_bg1").css('left',0);//第一张图
+                setTimeout(function () {
+                    $(".p14_bg1 .dialog_box2").fadeIn(1000);//第一个对话框
+                },1000);
+                setTimeout(function () {
+                    $(".p14_bg1 .b_box2").fadeOut(1000);//第一个对话框内容
+                },1500);
+                setTimeout(function () {
+                    $(".p14_bg1 .dialog_box1").fadeIn(1000);//第二个对话框
+                },3000);
+                setTimeout(function () {
+                    $(".p14_bg1 .b_box1").fadeOut(1000);//第二个对话框内容
+                },3500);
+                setTimeout(function () {
+                    $(".p14_bg1 .dialog_box3").fadeIn(1000);//第三个对话框
+                },5000);
+                setTimeout(function () {
+                    $(".p14_bg1 .b_box3").fadeOut(1000);//第三个对话框内容
+                },5500);
+                setTimeout(function () {
+                    $(".p14_bg2").css('right',0);//第二张图
+                },7000);
+                setTimeout(function () {
+                    $(".p14_bg2 .dialog_box1").fadeIn(1000);//第四个对话框
+                },8000);
+                setTimeout(function () {
+                    $(".p14_bg2 .b_box1").fadeOut(1000);//第四个对话框内容
+                },8500);
+                setTimeout(function () {
+                    $(".p14_bg2 .dialog_box2").fadeIn(1000);//第五个对话框
+                },10000);
+                setTimeout(function () {
+                    $(".p14_bg2 .b_box2").fadeOut(1000);//第五个对话框内容
+                },10500);
+                setTimeout(function () {
+                    $(".p14_bg3").css('bottom',0);//第三张图
+                },12000);
+
+                setTimeout(function () {
+                    $(".p14_bottom").css('bottom',0);//小女孩
+                },13500);
+                setTimeout(function () {
+                    $(".p14_bg3 .dialog_box1").fadeIn(1000);//第六个对话框
+                },14500);
+                setTimeout(function () {
+                    $(".p14_bg3 .b_box1").fadeOut(1000);//第六个对话框内容
+                },15000);
+
+                setTimeout(function () {
+                    $(".p15_bg").fadeIn(1000);
+                },17000);
+            });
+            //帮助挑战--跳转古诗词答题页
+            $(".page14 .p15_btn1").click(function () {
+              //  bgMusic.pause();//背景暂停
+                //gameMusic.currentTime=0;
+                //gameMusic.play();//游戏音效
+                $(".page14").hide();
+                $(".page11").show();
+                $(".page11 .idiom_game").hide();//成语闯关
+                $(".page11 .ancient_poetry").show();//古诗词闯关
+
+            });
+
+            //不帮助，只要月饼
+            $(".p15_btn2").click(function () {
+                $(".page14").hide();
+                $(".page15").show();
+            });
+            //古诗词答完弹窗点击
+            $(".mask2Box .arrow").click(function () {
+                //gameMusic.currentTime=0;
+               // gameMusic.pause();//游戏音效
+               // bgMusic.play();//背景播放
+                $(".mask2Box").hide();
+                $(".page11").hide();
+                $(".page16").show();
+                $(".p16_img1").css('bottom',0);
+                setTimeout(function () {
+                    $(".page16 .dialog_box").fadeIn(1000);
+                },1000);
+                setTimeout(function () {
+                    $(".page16 .dialog_box .bg1").fadeOut(1000);
+                    $(".page16 .dialog_box .bg2").fadeOut(1000);
+                },1500);
+                setTimeout(function () {
+                    $(".p16_img1 .p16_btn").fadeIn(1000);
+                },2500);
+            });
+            //点击月饼盒到最后一页
+            $(".p16_btn").click(function () {
+                $(".bot_bg").fadeIn();
+                chuanYue.currentTime=0;
+                chuanYue.play();//穿越音效
+                setTimeout(function () {
+                    chuanYue.pause();//穿越音效暂停
+                    $(".page16").hide();
+                    $(".page17").show();
+                },5000);
+
+            });
+            $(".page17 .p17_btn").click(function () {
+                //window.location.href="/WinsMS/application/webapi/view/mid_autumn_lucky_draw/last_game.html";
+                $(".page17").hide();
+                $('.last_game').show();
+            });
+            //关闭和确定都跳转古诗词答题页
+            $(".page15 .p15_icon1").click(function () {
+               // bgMusic.pause();//背景暂停
+             //   gameMusic.currentTime=0;
+              //  gameMusic.play();//游戏音效
+                $(".page15").hide();
+                $(".page11").show();
+                $(".page11 .idiom_game").hide();//成语闯关
+                $(".page11 .ancient_poetry").show();//古诗词闯关
+            })
+            $(".page15 .p15_icon2").click(function () {
+            //    bgMusic.pause();//背景暂停
+               // gameMusic.currentTime=0;
+              //  gameMusic.play();//游戏音效
+                $(".page15").hide();
+                $(".page11").show();
+                $(".page11 .idiom_game").hide();//成语闯关
+                $(".page11 .ancient_poetry").show();//古诗词闯关
+            });
+            //着急硬闯弹窗关闭和确定都跳转成语答题页
+            $(".page12 .p12_icon1").click(function () {
+               // bgMusic.pause();//背景暂停
+                //gameMusic.currentTime=0;
+                //gameMusic.play();//游戏音效
+                $(".page14").hide();
+                $(".page12").hide();
+                $(".page11").show();
+                $(".page11 .idiom_game").show();//成语闯关
+            });
+            $(".page12 .p12_icon2").click(function () {
+              //  bgMusic.pause();//背景暂停
+                //gameMusic.currentTime=0;
+               // gameMusic.play();//游戏音效
+                $(".page14").hide();
+                $(".page12").hide();
+                $(".page11").show();
+                $(".page11 .idiom_game").show();//成语闯关
+            });
+            //关闭按钮和确定按钮点击跳转到心愿屋
+            $(".mask1Box .toOtherPage").click(function () {
+             //   gameMusic.currentTime=0;
+               // gameMusic.pause();//游戏音效
+            //    bgMusic.play();//背景播放
+                $(".page11").hide();
+                $(".mask1Box").hide();
+                $(".page13").show();
+                $(".p13_bg1").css('right',0);//第一张图片
+                setTimeout(function () {
+                    $(".p13_bg1 .dialog_box").fadeIn(1000);//第一个对话框
+                },1000);
+                setTimeout(function () {
+                    $(".p13_bg1 .b_box").fadeOut(1000);//第一个对话框内容
+                },1500);
+                setTimeout(function () {
+                    $(".p13_bg2").css('left',0);//第二张图片
+                },2500);
+                setTimeout(function () {
+                    $(".p13_bg2 .dialog_box").fadeIn(1000);//第二个对话框
+                },3500);
+                setTimeout(function () {
+                    $(".p13_bg2 .b_box").fadeOut(1000);//第二个对话框内容
+                },4000);
+                setTimeout(function () {
+                    $(".p13_bg2 .p13_btn").fadeIn(1000);//小手
+                },5000);
+            });
+            //试吃月饼跳转
+            $(".page8 .toNextPage").click(function () {
+                $(".page8").hide();
+                $(".page9").show();
+            })
+
+        });//结束
+
+
+    </script>
+<script src="/WinsMS/application/webapi/view/mid_autumn_lucky_draw/js/jquery.scs.min.js"></script>
+<script src="/WinsMS/application/webapi/view/mid_autumn_lucky_draw/js/CNAddrArr.min.js"></script>
+<script>
+    const height = document.body.scrollHeight;  // 用onresize事件监控窗口或框架被调整大小，先把一开始的高度记录下来
+ //   console.log('height',height);
+    window.onresize = function () { // 如果当前窗口小于一开始记录的窗口高度，那就让当前窗口等于一开始窗口的高度
+        if (document.body.scrollHeight < height) {
+           // alert(height);
+            document.body.style.height = height+'px';
+        }
+    };
+
+
+
+    $(function () {
+        let _openid ="{$userinfo['openid']}";
+       // console.log('_openid',_openid);
+        //alert(_openid);
+        let min=0;
+        let sec=0;
+        let ms=0;
+        let timer=null;
+        let minText='';//分钟数
+        let secText='';//秒数
+        let msText='';//毫秒数
+        let isShare=false;//是否需要分享
+        let canWinStatus=1;//1表示可以中奖，2表示不能中奖，3表示已经获奖
+        let realyScore='';//用户获得的成绩
+        let winScoreStart;//中奖最小区间
+        let winScoreEnd;//中奖最大区间
+        let isWinner=0;//1表示中奖，0表示未中奖
+        let orderId='';//订单号如果有订单就可以填写地址
+        let playNum=1;//1表示可以继续玩，2表示次数到上限了
+        let nickName=['A  萌宝妈','AAA刂龍爺','AAA*勇往直前*','白酒瘾','白衣煮茶（熊熊）','~つ棒棒糖甜到忧伤','宝g-','宝贤阁_贤','Beatrice','卞心砚','别惹我','不会哭的Zero','不瘦到130不改网名','不同的美少女🍭','不再三岁了','灿若星辰','宠Ta吧          ฅ','刺青师~丹秀','Crazy for you','Daisy77799','大柳树','大楠²⁰¹⁹','都说我萌萌哒','欠我江山，总要归还','飞翔的斑马','奋斗'];
+        let goodsList=['获得华为P30一台','获得精品中和月饼一盒','获得中秋育儿大礼包一份','获得中秋育儿大礼包一份','获得中秋育儿大礼包一份','获得中秋育儿大礼包一份','获得精品中和月饼一盒','获得中秋育儿大礼包一份','获得中秋育儿大礼包一份'];
+        let newNickName=[];
+        let str='';
+        let list =nickName.sort(randomsort);
+        for(let i=0;i<10;i++){
+            newNickName.push(list[i])
+        }
+        //<span class="b-num">天,gundongList</span>
+        for(let i=0;i<newNickName.length;i++){
+
+            newNickName[i]=newNickName[i].substr(0,1)+'****'+newNickName[i].substr(-1, 1);
+
+
+        }
+        for(let i=0;i<newNickName.length;i++){
+            str+='<span class="b-num">'+newNickName[i]+'   '+goodsList[i]+'</span><span></span>';
+        }
+
+        $(".gundongList").append(str);
+        //console.log(newNickName);
+        function randomsort(a, b) {
+            return Math.random()>.5 ? -1 : 1; //通过随机产生0到1的数，然后判断是否大于0.5从而影响排序，产生随机性的效果。
+        }
+
+        //查看用户是否能中奖
+        checkUserQualification();//查看用户是否能中奖
+        function checkUserQualification(){
+            $.ajax({
+                url: '/WinsMS/maldcheck',
+                type: 'get',
+                data: {
+                    openid:_openid,
+                },
+                dataType: 'json',
+                async: false,
+                success: function (res) {
+                   // console.log(res);
+                    if(res.code==1001){
+                        canWinStatus=res.canwinstatus;//1表示可以中奖，2表示不能中奖，3表示已经获奖
+                        winScoreStart=10-(res.winnin_time_interval/2);
+                        winScoreEnd=10+(res.winnin_time_interval/2);
+                     //   alert(res.canwinstatus);
+                    }else if(res.code==1004){
+                        playNum=2;//次数已到上限
+                        /* $(".shareBox").css('display','flex');
+                         $(".shareBox .share_bg").addClass('active');
+                         $(".shareBox .share_icon").hide();*/
+                    }
+                    if(res.code==1005){
+                        isShare=true;//需要分享获得次数
+                    }else{
+                        isShare=false;
+                    }
+                }
+            });
+        };
+
+        //开始计时
+        $('.startBtn').click(function(){
+            checkUserQualification();//查看用户是否能中奖
+            reset();//把时间清0
+            if(playNum==2){
+                //已到上限不能分享了
+                $(".shareBox").css('display','flex');
+                $(".shareBox .share_bg").addClass('active');
+                $(".shareBox .share_icon").hide();
+                $('.shareBox').click(function () {
+                    window.location.href="https://www.win-east.cn/WinsMS/maldview";
+                });
+                return;
+            }
+            if(isShare){
+                //如果isShare为true的话，就是需要分享才能再继续玩儿
+                $('.shareBox').css('display','flex');//分享弹窗显示
+                $(".maskBox1").hide();//中没中奖弹窗隐藏
+                reset();//把时间清0
+                return;
+            }
+            if(!$(this).hasClass('stop')){
+                $(this).addClass('stop');
+                $(this).removeClass('one_more');
+                clearInterval(timer);
+                timer=setInterval(show,10);
+            }else{
+                $(this).removeClass('stop');
+                $(this).addClass('one_more');
+                clearInterval(timer);
+                //console.log('分钟数'+minText);
+                //console.log('秒数'+secText);
+               // console.log('毫秒数'+msText);
+                let minArr=minText.toString().split('');
+                let secArr=secText.toString().split('');
+                let msArr=msText.toString().split('');
+                realyScore=Number(minText+secText).toString()+'.'+msText;
+               // console.log(realyScore);
+                //console.log('最小区间',winScoreStart);
+               // console.log('最大区间',winScoreEnd);
+                if(canWinStatus==1){
+                    if(realyScore>=winScoreStart&&realyScore<=winScoreEnd){
+                       // console.log('中奖');
+                        $(".loadingBox").css('display','flex');
+                        isWinner=1;
+                        $(".maskBox2").css('display','flex');
+                        $(".maskBox1").css('display','none');
+                        $(".maskBox2 .closeBtn").hide();
+                        //如果分钟为0时不显示分钟数
+                        if(minArr[0]==0&&minArr[1]==0){
+                            $(".showtime .min1").hide();
+                            $(".showtime .min2").hide();
+                            $(".showtime .s_bg1").hide();
+                        }else{
+                            $(".showtime .s_bg1").show();
+                            $(".showtime .min1").html(minArr[0]);
+                            $(".showtime .min2").html(minArr[1]);
+                        }
+                        $(".showtime .sec1").html('1');
+                        $(".showtime .sec2").html('0');
+                        $(".showtime .ms1").html('0');
+                        $(".showtime .ms2").html('0');
+
+                    }else{
+                        //console.log('未中奖')
+                        $(".maskBox1").css('display','flex');
+                        $(".maskBox2").css('display','none');
+                        isWinner=0;
+                        isWinFun();//是否中奖
+                        //如果分钟为0时不显示分钟数
+                        if(minArr[0]==0&&minArr[1]==0){
+                            $(".showtime .min1").hide();
+                            $(".showtime .min2").hide();
+                            $(".showtime .s_bg1").hide();
+                        }else{
+                            $(".showtime .s_bg1").show();
+                            $(".showtime .min1").html(minArr[0]);
+                            $(".showtime .min2").html(minArr[1]);
+                        }
+                        $(".showtime .sec1").html(secArr[0]);
+                        $(".showtime .sec2").html(secArr[1]);
+                        $(".showtime .ms1").html(msArr[0]);
+                        $(".showtime .ms2").html(msArr[1]);
+                    }
+
+                }else{
+                    isWinFun();//是否中奖
+                    if(realyScore=='10.00'){
+                        //console.log('中奖');
+                        //如果分钟为0时不显示分钟数
+                        if(minArr[0]==0&&minArr[1]==0){
+                            $(".showtime .min1").hide();
+                            $(".showtime .min2").hide();
+                            $(".showtime .s_bg1").hide();
+                        }else{
+                            $(".showtime .s_bg1").show();
+                            $(".showtime .min1").html(minArr[0]);
+                            $(".showtime .min2").html(minArr[1]);
+                        }
+                        $(".showtime .s_min1").html(minArr[0]);
+                        $(".showtime .s_min2").html(minArr[1]);
+                        $(".showtime .sec1").html(secArr[0]);
+                        $(".showtime .sec2").html(secArr[1]);
+                        $(".showtime .ms1").html(msArr[0]);
+                        $(".showtime .ms2").html(2);
+                        //如果没有中奖资格，用户又拍到10.00，就把10.00显示成10.02为未中奖（显示未中奖弹窗）
+                        $(".maskBox1").css('display','flex');
+                        $(".maskBox2").css('display','none');
+                    }else{
+                        //console.log('未中奖')
+                        $(".maskBox1").css('display','flex');
+                        $(".maskBox2").css('display','none');
+                        if(minArr[0]==0&&minArr[1]==0){
+                            $(".showtime .min1").hide();
+                            $(".showtime .min2").hide();
+                            $(".showtime .s_bg1").hide();
+                        }else{
+                            $(".showtime .s_bg1").show();
+                            $(".showtime .min1").html(minArr[0]);
+                            $(".showtime .min2").html(minArr[1]);
+                        }
+                        $(".showtime .s_min1").html(minArr[0]);
+                        $(".showtime .s_min2").html(minArr[1]);
+                        $(".showtime .sec1").html(secArr[0]);
+                        $(".showtime .sec2").html(secArr[1]);
+                        $(".showtime .ms1").html(msArr[0]);
+                        $(".showtime .ms2").html(msArr[1]);
+                    }
+
+                }
+
+
+            }
+        });
+        //判断是否中奖
+        function isWinFun() {
+            let formData = new FormData();
+            formData.append('openid', _openid)
+            formData.append('score', realyScore);//分数
+            formData.append('iswinner', isWinner);//是否中奖
+            $.ajax({
+                url: '/WinsMS/maldlog',
+                type: 'POST',
+                data: formData,
+                contentType: false,
+                processData: false,
+                dataType: 'json',
+                async: false,
+                success: function (res) {
+                    //console.log(res);
+                    if(res.code==1001){
+                        orderId=res.orderid;
+                    }else {
+                       // console.log('身份验证失败')
+                        alert(res.msg);
+                    }
+                }
+            });
+        }
+        //生成时间
+        function show(){
+            ms++;
+            if(sec==60){
+                min++;sec=0;
+            }
+            if(ms==100){
+                sec++;ms=0;
+            }
+            let msStr=ms;
+            if(ms<10){
+                msStr="0"+ms;
+            }
+            let secStr=sec;
+            if(sec<10){
+                secStr="0"+sec;
+            }
+            let minStr=min;
+            if(min<10){
+                minStr="0"+min;
+            }
+            minText=minStr;//分钟数
+            secText=secStr;//秒数
+            msText=msStr;//毫秒数
+            let minArr=minStr.toString().split('');
+            let secArr=secStr.toString().split('');
+            let msArr=msStr.toString().split('');
+            $(".showtime .s_min1").html(minArr[0]);
+            $(".showtime .s_min2").html(minArr[1]);
+            $(".showtime .min1").html(minArr[0]);
+            $(".showtime .min2").html(minArr[1]);
+            $(".showtime .sec1").html(secArr[0]);
+            $(".showtime .sec2").html(secArr[1]);
+            $(".showtime .ms1").html(msArr[0]);
+            $(".showtime .ms2").html(msArr[1]);
+            /*$('#showtime span:eq(0)').html(minStr);
+            $('#showtime span:eq(2)').html(secStr);
+            $('#showtime span:eq(4)').html(msStr);*/
+        };
+
+        //再拍一次
+        $('.addressBtn1').click(function () {
+                $(".maskBox1").hide();//未中奖弹窗隐藏
+
+
+        });
+
+        //填写地址
+        $('.addressBtn2').click(function () {
+            console.log(_openid,realyScore,isWinner);
+            let formData = new FormData();
+            formData.append('openid', _openid)
+            formData.append('score', realyScore);//分数
+            formData.append('iswinner', isWinner);//是否中奖
+
+            $.ajax({
+                url: '/WinsMS/maldlog',
+                type: 'POST',
+                data: formData,
+                contentType: false,
+                processData: false,
+                dataType: 'json',
+                async: false,
+                success: function (res) {
+                    console.log(res);
+                    if(res.code==1001){
+                        $(".loadingBox").css('display','none');
+                        orderId=res.orderid;
+                        $(".maskBox2").hide();//中奖弹窗隐藏
+                        $(".addressBox").css('display','flex');
+
+                    }else {
+                        console.log('身份验证失败')
+                        alert(res.msg);
+                    }
+                }
+            });
+
+
+
+        });
+        //活动说明
+        $(".tiShi").click(function () {
+            $(".explainBox").css('display','flex');
+        });
+        //关闭弹窗
+        $(".closeBtn").click(function () {
+            $(".explainBox").hide();
+            $(".maskBox").hide();
+        });
+        $(".explainBox").click(function () {
+            $(".explainBox").hide();
+        });
+        //点击遮罩弹窗隐藏
+        $(".picker-mask").click(function () {
+            $(".picker").hide();
+
+        })
+        //添加地址
+        $(".addBtn").click(function () {
+            console.log($('#myAddrs').val())
+            console.log('orderId',orderId);
+            let address=$('#myAddrs').val()+$("#address").val();
+            console.log(address);
+            let addArr=$('#myAddrs').val().split(' ');
+            console.log(addArr);
+            if($("#nameVal").val()==''){
+                $(".mBox").css('display','flex');
+                $(".mBox .text").text('请填写姓名');
+                setTimeout(function () {
+                    $(".mBox").css('display','none');
+                },1000);
+            }else if( $("#telNum").val()==''){
+                $(".mBox").css('display','flex');
+                $(".mBox .text").text('请填写电话');
+                setTimeout(function () {
+                    $(".mBox").css('display','none');
+                },1000);
+            }else if( $("#myAddrs").val()==''){
+                $(".mBox").css('display','flex');
+                $(".mBox .text").text('请选择地区');
+                setTimeout(function () {
+                    $(".mBox").css('display','none');
+                },1000);
+            }else if( $("#address").val()==''){
+                $(".mBox").css('display','flex');
+                $(".mBox .text").text('请填写详细地址');
+                setTimeout(function () {
+                    $(".mBox").css('display','none');
+                },1000);
+            }else{
+               // alert(orderId);
+              //  alert($("#nameVal").val());
+               // alert($("#telNum").val());
+              //  alert($("#address").val());
+                let formData = new FormData();
+                formData.append('orderid', orderId);
+                formData.append('nickname', $("#nameVal").val());//test
+                formData.append('phonenumber', $("#telNum").val());//test
+                formData.append('address', address);//test
+                formData.append('city',addArr[1]);//test
+                formData.append('province', addArr[0]);//test
+                formData.append('country', "中国");//test
+                $.ajax({
+                    url: '/WinsMS/maldaddress',
+                    type: 'POST',
+                    data: formData,
+                    contentType: false,
+                    processData: false,
+                    dataType: 'json',
+                    async: false,
+                    success: function (res) {
+                        console.log(res);
+                      //  alert(res.code)
+                        if(res.code==1001){
+                            $(".mBox").css('display','flex');
+                            $(".mBox .text").text('提交地址成功');
+                            setTimeout(function () {
+                                window.location.href="https://www.win-east.cn/WinsMS/maldview";
+                                //提交地址成功后回首页
+                            },1500);
+                        }
+                    }
+                });
+            }
+        });
+
+
+        function reset(){
+            min=0;//把分钟清0
+            sec=0;//把秒钟清0
+            ms=0;//把毫秒清0
+            $(".showtime .min1").show();
+            $(".showtime .min2").show();
+            $(".showtime .s_bg1").show();
+            $(".showtime .min1").html(0);
+            $(".showtime .min2").html(0);
+            $(".showtime .sec1").html(0);
+            $(".showtime .sec2").html(0);
+            $(".showtime .ms1").html(0);
+            $(".showtime .ms2").html(0);
+        };
+
+
+        //地区选择
+        function getAddrsArrayById(id) {
+            let results = [];
+            if (addr_arr[id] != undefined)
+                addr_arr[id].forEach(function(subArr) {
+                    results.push({
+                        key: subArr[0],
+                        val: subArr[1]
+                    });
+                });
+            else {
+                return;
+            }
+            return results;
+        }
+
+        function getStartIndexByKeyFromStartArr(startArr, key) {
+            let result = 0;
+            if (startArr != undefined)
+                startArr.forEach(function(obj, index) {
+                    if (obj.key == key) {
+                        result = index;
+                        return false;
+                    }
+                });
+            return result;
+        }
+
+        //bind the click event for 'input' element
+        $("#myAddrs").click(function() {
+            let PROVINCES = [],
+                startCities = [],
+                startDists = [];
+            //Province data，shall never change.
+            addr_arr[0].forEach(function(prov) {
+                PROVINCES.push({
+                    key: prov[0],
+                    val: prov[1]
+                });
+            });
+            //init other data.
+            let $input = $(this),
+                dataKey = $input.attr("data-key"),
+                provKey = 1, //default province 北京
+                cityKey = 36, //default city 北京
+                distKey = 37, //default district 北京东城区
+                distStartIndex = 0, //default 0
+                cityStartIndex = 0, //default 0
+                provStartIndex = 0; //default 0
+
+            if (dataKey != "" && dataKey != undefined) {
+                var sArr = dataKey.split("-");
+                if (sArr.length == 3) {
+                    provKey = sArr[0];
+                    cityKey = sArr[1];
+                    distKey = sArr[2];
+
+                } else if (sArr.length == 2) {
+                    //such as 台湾，香港 and the like.
+                    provKey = sArr[0];
+                    cityKey = sArr[1];
+                }
+                startCities = getAddrsArrayById(provKey);
+                startDists = getAddrsArrayById(cityKey);
+                provStartIndex = getStartIndexByKeyFromStartArr(PROVINCES, provKey);
+                cityStartIndex = getStartIndexByKeyFromStartArr(startCities, cityKey);
+                distStartIndex = getStartIndexByKeyFromStartArr(startDists, distKey);
+            }
+            let navArr = [{
+                //3 scrollers, and the title and id will be as follows:
+                title: "省",
+                id: "scs_items_prov"
+            }, {
+                title: "市",
+                id: "scs_items_city"
+            }, {
+                title: "区",
+                id: "scs_items_dist"
+            }];
+            SCS.init({
+                navArr: navArr,
+                onOk: function(selectedKey, selectedValue) {
+                    $input.val(selectedValue).attr("data-key", selectedKey);
+                }
+            });
+            let distScroller = new SCS.scrollCascadeSelect({
+                el: "#" + navArr[2].id,
+                dataArr: startDists,
+                startIndex: distStartIndex
+            });
+            let cityScroller = new SCS.scrollCascadeSelect({
+                el: "#" + navArr[1].id,
+                dataArr: startCities,
+                startIndex: cityStartIndex,
+                onChange: function(selectedItem, selectedIndex) {
+                    distScroller.render(getAddrsArrayById(selectedItem.key), 0);
+                    //re-render distScroller when cityScroller change
+                }
+            });
+            let provScroller = new SCS.scrollCascadeSelect({
+                el: "#" + navArr[0].id,
+                dataArr: PROVINCES,
+                startIndex: provStartIndex,
+                onChange: function(selectedItem, selectedIndex) {
+                    //re-render both cityScroller and distScroller when provScroller change
+                    cityScroller.render(getAddrsArrayById(selectedItem.key), 0);
+                    distScroller.render(getAddrsArrayById(cityScroller.getSelectedItem().key), 0);
+                }
+            });
+        });
+    })
+</script>
+<script>
+    let vm=new Vue({
+        el:'#app',
+        data:{
+            listArr:[
+                {'id':1,'class':'l_icon1','isActive':false,'isCheck':false},
+                {'id':2,'class':'l_icon2','isActive':false,'isCheck':false},
+                {'id':3,'class':'l_icon3','isActive':false,'isCheck':false},
+                {'id':4,'class':'l_icon4','isActive':false,'isCheck':false},
+                {'id':5,'class':'l_icon5','isActive':false,'isCheck':false},
+                {'id':6,'class':'l_icon6','isActive':false,'isCheck':false},
+                {'id':7,'class':'l_icon7','isActive':false,'isCheck':false},
+                {'id':8,'class':'l_icon8','isActive':false,'isCheck':false},
+                {'id':9,'class':'l_icon9','isActive':false,'isCheck':false},
+                {'id':10,'class':'l_icon10','isActive':false,'isCheck':false},
+                {'id':11,'class':'l_icon11','isActive':false,'isCheck':false},
+                {'id':12,'class':'l_icon12','isActive':false,'isCheck':false},
+                {'id':13,'class':'l_icon13','isActive':false,'isCheck':false},
+                {'id':14,'class':'l_icon14','isActive':false,'isCheck':false},
+                {'id':15,'class':'l_icon15','isActive':false,'isCheck':false},
+                {'id':16,'class':'l_icon16','isActive':false,'isCheck':false},
+                {'id':17,'class':'l_icon17','isActive':false,'isCheck':false},
+                {'id':18,'class':'l_icon18','isActive':false,'isCheck':false},
+            ],
+            pListArr:[
+                {'id':1,'class':'l_icon1','isActive':false,'isCheck':false},
+                {'id':2,'class':'l_icon2','isActive':false,'isCheck':false},
+                {'id':3,'class':'l_icon3','isActive':false,'isCheck':false},
+                {'id':4,'class':'l_icon4','isActive':false,'isCheck':false},
+                {'id':5,'class':'l_icon5','isActive':false,'isCheck':false},
+                {'id':6,'class':'l_icon6','isActive':false,'isCheck':false},
+                {'id':7,'class':'l_icon7','isActive':false,'isCheck':false},
+                {'id':8,'class':'l_icon8','isActive':false,'isCheck':false},
+                {'id':9,'class':'l_icon9','isActive':false,'isCheck':false},
+                {'id':10,'class':'l_icon10','isActive':false,'isCheck':false},
+                {'id':11,'class':'l_icon11','isActive':false,'isCheck':false},
+                {'id':12,'class':'l_icon12','isActive':false,'isCheck':false},
+                {'id':13,'class':'l_icon13','isActive':false,'isCheck':false},
+                {'id':14,'class':'l_icon14','isActive':false,'isCheck':false},
+                {'id':15,'class':'l_icon15','isActive':false,'isCheck':false},
+                {'id':16,'class':'l_icon16','isActive':false,'isCheck':false},
+                {'id':17,'class':'l_icon17','isActive':false,'isCheck':false},
+                {'id':18,'class':'l_icon18','isActive':false,'isCheck':false},
+            ],
+            answer1:false,
+            answer2:false,
+            answer3:false,
+            pAnswer1:false,
+            pAnswer2:false,
+            pAnswer3:false,
+            pAnswer4:false,
+            pAnswer5:false,
+            errorMusic:'',
+            rightMusic:'',
+        },
+        created:function () {
+            let that=this;
+            let errorMusic = document.getElementById('errorMusic');//答错音效
+            let rightMusic = document.getElementById('rightMusic');//答完题
+            that.errorMusic=errorMusic;
+            that.rightMusic=rightMusic;
+            that.errorMusic.load();//答错音效
+            that.rightMusic.load();//答对音效
+        },
+        methods:{
+            selectAnswer:function (id) {
+                let that=this;
+                let answerId=id;//答案ID 1,9,18
+                let list=that.listArr;
+                console.log(answerId);
+                if(answerId==1){
+                    if(!that.answer1){
+                        //答对
+                        that.answer1=true;
+                        for(let i=0;i<list.length;i++){
+                            list[i].isActive=false;
+                            if(answerId==list[i].id){
+                                list[i].isCheck=true;
+                            }
+
+                        }
+                    }else{
+                        for(let i=0;i<list.length;i++){
+                            list[i].isActive=false;
+                            if(answerId==list[i].id){
+                                list[i].isActive=true;
+                                setTimeout(function () {
+                                    list[i].isActive=false;
+                                },1000)
+                            }
+                        }
+                    }
+                }else if(answerId==9){
+                    if(that.answer2==false&&that.answer1==true){
+                        that.answer2=true;
+                        for(let i=0;i<list.length;i++){
+                            list[i].isActive=false;
+                            if(answerId==list[i].id){
+                                list[i].isCheck=true;
+                            }
+                        }
+                    }else{
+                        for(let i=0;i<list.length;i++){
+                            list[i].isActive=false;
+                            if(answerId==list[i].id){
+                                list[i].isActive=true;
+                                setTimeout(function () {
+                                    list[i].isActive=false;
+                                },1000)
+                            }
+                        }
+                    }
+                }else if(answerId==18){
+                    if(that.answer3==false&&that.answer1==true&&that.answer2==true){
+                        that.answer3=true;
+                        for(let i=0;i<list.length;i++){
+                            list[i].isActive=false;
+                            if(answerId==list[i].id){
+                                list[i].isCheck=true;
+                            }
+                        }
+                        console.log('完成答题');
+                        that.rightMusic.currentTime=0;
+                        that.rightMusic.play();
+                        setTimeout(function () {
+                            that.rightMusic.pause();
+                            $(".mask1Box").show();
+                        },2500);
+
+                    }else{
+                        for(let i=0;i<list.length;i++){
+                            list[i].isActive=false;
+                            if(answerId==list[i].id){
+                                list[i].isActive=true;
+                                setTimeout(function () {
+                                    list[i].isActive=false;
+                                },1000)
+                            }
+                        }
+                    }
+
+                }else{
+                    //答错
+                    that.errorMusic.currentTime=0;
+                    that.errorMusic.play();
+                    for(let i=0;i<list.length;i++){
+                        list[i].isActive=false;
+                        if(answerId==list[i].id){
+                            list[i].isActive=true;
+                            setTimeout(function () {
+                                list[i].isActive=false;
+                            },1000)
+                        }
+                    }
+                }
+
+            },
+            ancientSelectAnswer:function (id) {
+                let that=this;
+                let answerId=id;//答案ID 1,9,18
+                let list=that.pListArr;
+                console.log(answerId);
+                if(answerId==1){
+                    if(!that.pAnswer1){
+                        that.pAnswer1=true;
+                        for(let i=0;i<list.length;i++){
+                            list[i].isActive=false;
+                            if(answerId==list[i].id){
+                                list[i].isCheck=true;
+                            }
+                        }
+                    }else{
+                        for(let i=0;i<list.length;i++){
+                            list[i].isActive=false;
+                            if(answerId==list[i].id){
+                                list[i].isActive=true;
+                                setTimeout(function () {
+                                    list[i].isActive=false;
+                                },1000)
+                            }
+                        }
+                    }
+                }else if(answerId==4){
+                    if(that.pAnswer2==false&&that.pAnswer1==true){
+                        that.pAnswer2=true;
+                        for(let i=0;i<list.length;i++){
+                            list[i].isActive=false;
+                            if(answerId==list[i].id){
+                                list[i].isCheck=true;
+                            }
+                        }
+                    }else{
+                        for(let i=0;i<list.length;i++){
+                            list[i].isActive=false;
+                            if(answerId==list[i].id){
+                                list[i].isActive=true;
+                                setTimeout(function () {
+                                    list[i].isActive=false;
+                                },1000)
+                            }
+                        }
+                    }
+                }else if(answerId==8){
+                    if(that.pAnswer3==false&&that.pAnswer1==true&&that.pAnswer2==true){
+                        that.pAnswer3=true;
+                        for(let i=0;i<list.length;i++){
+                            list[i].isActive=false;
+                            if(answerId==list[i].id){
+                                list[i].isCheck=true;
+                            }
+                        }
+                    }else{
+                        for(let i=0;i<list.length;i++){
+                            list[i].isActive=false;
+                            if(answerId==list[i].id){
+                                list[i].isActive=true;
+                                setTimeout(function () {
+                                    list[i].isActive=false;
+                                },1000)
+                            }
+                        }
+                    }
+                }else if(answerId==12){
+                    if(that.pAnswer4==false&&that.pAnswer1==true&&that.pAnswer2==true&&that.pAnswer3==true){
+                        that.pAnswer4=true;
+                        for(let i=0;i<list.length;i++){
+                            list[i].isActive=false;
+                            if(answerId==list[i].id){
+                                list[i].isCheck=true;
+                            }
+                        }
+                    }else{
+                        for(let i=0;i<list.length;i++){
+                            list[i].isActive=false;
+                            if(answerId==list[i].id){
+                                list[i].isActive=true;
+                                setTimeout(function () {
+                                    list[i].isActive=false;
+                                },1000)
+                            }
+                        }
+                    }
+                }else if(answerId==16){
+                    if(that.pAnswer5==false&&that.pAnswer1==true&&that.pAnswer2==true&&that.pAnswer3==true&&that.pAnswer4==true){
+                        that.pAnswer5=true;
+                        for(let i=0;i<list.length;i++){
+                            list[i].isActive=false;
+                            if(answerId==list[i].id){
+                                list[i].isCheck=true;
+                            }
+                        }
+                        console.log('完成答题')
+                        that.rightMusic.currentTime=0;
+                        that.rightMusic.play();
+                        setTimeout(function () {
+                            that.rightMusic.pause();
+                            $(".mask2Box").show();
+                        },2500);
+                    }else{
+                        for(let i=0;i<list.length;i++){
+                            list[i].isActive=false;
+                            if(answerId==list[i].id){
+                                list[i].isActive=true;
+                                setTimeout(function () {
+                                    list[i].isActive=false;
+                                },1000)
+                            }
+                        }
+                    }
+
+                }else{
+                    //答错
+                    that.errorMusic.currentTime=0;
+                    that.errorMusic.play();
+                    for(let i=0;i<list.length;i++){
+                        list[i].isActive=false;
+                        if(answerId==list[i].id){
+                            list[i].isActive=true;
+                            setTimeout(function () {
+                                list[i].isActive=false;
+                            },1000)
+                        }
+                    }
+                }
+
+            }
+        }
+    })
+</script>
+</html>

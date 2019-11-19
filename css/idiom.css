@@ -1,0 +1,197 @@
+.bg{
+    width:100%;
+    height: 100%;
+    background-image: url("../images/g_bg.jpg");
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size:cover;
+    position: fixed;
+    top:0;left:0;
+}
+.idiom_game{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.idiom_game .g_bg1{
+    width:6.89rem;
+    height: 6.54rem;
+    background:url("../images/c_pic1.png") no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    top:16%;
+    margin:0 auto;
+
+}
+.idiom_game .g_bg2{
+    width:4.52rem;
+    height: 1.31rem;
+    background:url("../images/g_pic5.png") no-repeat;
+    background-size:100% 100%;
+    margin-top:2.69rem;
+    position: relative;
+    left:50%;
+    margin-left:-2.4rem;
+}
+.idiom_game .g_bg2 .text1.active{
+    display: inline-block;
+    width:0.75rem;
+    height: 0.54rem;
+    background:url("../images/a2.png") no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    top:0.56rem;
+    left:0.18rem;
+}
+.idiom_game .g_bg2 .text2.active{
+    display: inline-block;
+    width:0.44rem;
+    height: 0.71rem;
+    background:url("../images/b2.png") no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    top:0.34rem;
+    left:1.63rem;
+}
+.idiom_game .g_bg2 .text3.active{
+    display: inline-block;
+    width:0.51rem;
+    height: 0.53rem;
+    background:url("../images/d2.png") no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    top:0.41rem;
+    right:0.32rem;
+}
+
+.idiom_game .g_bg3{
+    width:6.56rem;
+    height: 1.91rem;
+    background: url("../images/g_pic3.png") no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    top:2.17rem;
+    z-index: 2;
+}
+.idiom_game .g_bg4{
+    width:6.23rem;
+    height: 0.76rem;
+    background: url("../images/g_pic2.png") no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    top:6rem;
+    left:0.5rem;
+}
+.idiom_game .box_list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: absolute;
+    top:65%;
+    padding:0 0.65rem;
+}
+.idiom_game .box_list .icon{
+    width:0.9rem;
+    height: 0.88rem;
+    display: inline-block;
+    margin-bottom:0.2rem;
+    border:1px solid rgba(0,0,0,0);
+    border-radius:0.25rem;
+}
+.idiom_game .box_list .icon.active{
+    border:0.02rem solid #ff6560;
+    border-radius:0.25rem;
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+}
+@keyframes shake {
+    10%, 90% {transform: translate3d(-1px, 0, 0);}
+
+    20%, 80% {transform: translate3d(2px, 0, 0);}
+
+    30%, 50%, 70% {transform: translate3d(-4px, 0, 0);}
+
+    40%, 60% {transform: translate3d(4px, 0, 0);}
+}
+.idiom_game .box_list .l_icon1{
+    background: url("../images/s1.png") no-repeat;
+    background-size:100% 100%;
+}
+.idiom_game .box_list .l_icon2{
+    background: url("../images/s2.png") no-repeat;
+    background-size:100% 100%;
+}
+.idiom_game .box_list .l_icon3{
+    background: url("../images/s3.png") no-repeat;
+    background-size:100% 100%;
+}
+.idiom_game .box_list .l_icon4{
+    background: url("../images/s4.png") no-repeat;
+    background-size:100% 100%;
+}
+.idiom_game .box_list .l_icon5{
+    background: url("../images/s5.png") no-repeat;
+    background-size:100% 100%;
+}
+.idiom_game .box_list .l_icon6{
+    background: url("../images/s6.png") no-repeat;
+    background-size:100% 100%;
+}
+.box_list .l_icon7{
+    background: url("../images/s7.png") no-repeat;
+    background-size:100% 100%;
+}
+.idiom_game .box_list .l_icon8{
+    background: url("../images/s8.png") no-repeat;
+    background-size:100% 100%;
+}
+.idiom_game .box_list .l_icon9{
+    background: url("../images/s9.png") no-repeat;
+    background-size:100% 100%;
+}
+.idiom_game .box_list .l_icon10{
+    background: url("../images/s10.png") no-repeat;
+    background-size:100% 100%;
+}
+.idiom_game .box_list .l_icon11{
+    background: url("../images/s11.png") no-repeat;
+    background-size:100% 100%;
+}
+.idiom_game .box_list .l_icon12{
+    background: url("../images/s12.png") no-repeat;
+    background-size:100% 100%;
+}
+.idiom_game .box_list .l_icon13{
+    background: url("../images/s13.png") no-repeat;
+    background-size:100% 100%;
+}
+.idiom_game .box_list .l_icon14{
+    background: url("../images/s14.png") no-repeat;
+    background-size:100% 100%;
+}
+.idiom_game .box_list .l_icon15{
+    background: url("../images/s15.png") no-repeat;
+    background-size:100% 100%;
+}
+.idiom_game .box_list .l_icon16{
+    background: url("../images/s16.png") no-repeat;
+    background-size:100% 100%;
+}
+.idiom_game .box_list .l_icon17{
+    background: url("../images/s17.png") no-repeat;
+    background-size:100% 100%;
+}
+.idiom_game .box_list .l_icon18{
+    background: url("../images/s18.png") no-repeat;
+    background-size:100% 100%;
+}
+.idiom_game .botText{
+    position: absolute;
+    top:93%;
+    text-align: center;
+    font-size:0.26rem;
+    font-family: sourceHanSansSc Regular;
+}
+
+
+
+

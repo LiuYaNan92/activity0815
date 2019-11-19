@@ -1,0 +1,154 @@
+.p9_bg, .p9_error{
+    width:100%;
+    height: 100%;
+    background-image:url("../images/p11_pic1.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+}
+.page9 .p9_error{
+    position: fixed;
+    top:0;left:0;
+}
+.page9 .p9_bg1{
+    width:4.51rem;
+    height: 0.4rem;
+    background:url("../images/p11_pic3.png") no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    top:11.78%;
+    left:50%;
+    margin-left:-2.255rem;
+    animation:mymove 3s infinite;
+    animation-direction:alternate;/*轮流反向播放动画。*/
+    animation-timing-function: ease-in-out; /*动画的速度曲线*/
+}
+
+@keyframes mymove
+{
+    0%{
+        transform: scale(1);  /*开始为原始大小*/
+    }
+    25%{
+        transform: scale(1.1); /*放大1.1倍*/
+    }
+    50%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(1.1);
+    }
+
+}
+
+.page9 .p9_bg2{
+    width:7.5rem;
+    height: 10.73rem;
+    background:url("../images/p11_pic4.png") no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    bottom:0;
+}
+.page9 .box1, .page9 .box2, .page9 .box3, .page9 .box4{
+    width:1.07rem;
+    height: 1.09rem;
+    /*border:0.02rem solid #653e00;*/
+    position: absolute;
+    top:0.4rem;
+}
+.page9 .box1{
+    left:0.29rem;
+}
+.page9 .box2{
+    left:2.3rem;
+}
+.page9 .box3{
+    left:4.16rem;
+}
+.page9 .box4{
+    right:0.4rem;
+}
+
+.page9 .p9_error .e_bg1{
+    width:7.5rem;
+    height: 7.45rem;
+    background:url("../images/p11_pic8.png") no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    bottom:0;
+}
+.page9 .p9_error .e_bg2{
+    width:3.4rem;
+    height: 5.12rem;
+    background:url("../images/p11_pic6.png") no-repeat;
+    background-size:100%;
+    position: absolute;
+    top:-5.05rem;
+    left:0.43rem;
+}
+.page9 .p9_error .e_bg3{
+    width:3.27rem;
+    height: 4.38rem;
+    background:url("../images/p11_pic10.png") no-repeat;
+    background-size:100%;
+    position: absolute;
+    top:-5.05rem;
+    right:0.33rem;
+}
+.page9 .p9_error .e_bg3 span{
+    width:3.27rem;
+    height: 4.38rem;
+    background:url("../images/p11_pic9.png") no-repeat;
+    background-size:100%;
+    position: absolute;
+    top:0;
+    right:0;
+}
+.page9 .p9_error .e_bg4{
+    width:100%;
+    height: 100%;
+    background-image:url("../images/p11_pic7.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+    z-index: 2;
+}
+.page9 .p9_mask{
+    width:100%;
+    height: 100%;
+    background-image:url("../images/p12_pic1.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+    position: fixed;
+    top:0;left:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page9 .p9_mask_bg{
+    width:4.82rem;
+    height: 3.64rem;
+    background:url("../images/p12_pic2.png") no-repeat;
+    background-size:100% 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.p9_mask_bg .icon1{
+    width:0.66rem;
+    height: 1rem;
+    background:url("../images/p_colse.png") no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    top:-0.78rem;
+    right:0.32rem;
+}
+.page9 .p9_mask_bg .icon2{
+    width:2.06rem;
+    height: 0.73rem;
+    background:url("../images/f_icon.png") no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    bottom:0.87rem;
+}

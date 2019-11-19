@@ -1,0 +1,211 @@
+body:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background:url("../images/page3.gif") no-repeat -10000px -1000px, url("../images/pic1.png") no-repeat -10000px -1000px,url("../images/pic2.png") no-repeat -10000px -1000px,url("../images/pic4.png") no-repeat -10000px -1000px,url("../images/pic5.png") no-repeat -10000px -1000px,url("../images/pic3.png") no-repeat -10000px -1000px,url("../images/t_icon.png") no-repeat -10000px -1000px,url("../images/bg2.png") no-repeat -10000px -1000px, url("../images/num_icon.png") no-repeat -10000px -1000px,url("../images/num_bg.png") no-repeat -10000px -1000px,url("../images/btn.png") no-repeat -10000px -1000px,url("../images/btn2.png") no-repeat -10000px -1000px,url("../images/btn3.png") no-repeat -10000px -1000px,url("../images/colse.png") no-repeat -10000px -1000px,url("../images/mask1.png") no-repeat -10000px -1000px,url("../images/mask2.png") no-repeat -10000px -1000px,url("../images/a_mask.png") no-repeat -10000px -1000px,url("../images/one_more.png") no-repeat -10000px -1000px,url("../images/arrow.png") no-repeat -10000px -1000px,url("../images/share2.png") no-repeat -10000px -1000px,url("../images/share1.png") no-repeat -10000px -1000px,url("../images/share_icon.png") no-repeat -10000px -1000px,url("../images/tishi_img.png") no-repeat -10000px -1000px,url("../images/g_bg.jpg") no-repeat -10000px -1000px,url("../images/g_pic1.png") no-repeat -10000px -1000px,url("../images/g_pic6.png") no-repeat -10000px -1000px,url("../images/p1.png") no-repeat -10000px -1000px,url("../images/p2.png") no-repeat -10000px -1000px,url("../images/p3.png") no-repeat -10000px -1000px,url("../images/p4.png") no-repeat -10000px -1000px,url("../images/p5.png") no-repeat -10000px -1000px,url("../images/a_pic3.png") no-repeat -10000px -1000px,url("../images/g_pic2.png") no-repeat -10000px -1000px,url("../images/g1.png") no-repeat -10000px -1000px,url("../images/g2.png") no-repeat -10000px -1000px,url("../images/g3.png") no-repeat -10000px -1000px,url("../images/g4.png") no-repeat -10000px -1000px,url("../images/g5.png") no-repeat -10000px -1000px,url("../images/g6.png") no-repeat -10000px -1000px,url("../images/g7.png") no-repeat -10000px -1000px,url("../images/g8.png") no-repeat -10000px -1000px,url("../images/g9.png") no-repeat -10000px -1000px,url("../images/g10.png") no-repeat -10000px -1000px,url("../images/g11.png") no-repeat -10000px -1000px,url("../images/g12.png") no-repeat -10000px -1000px,url("../images/g13.png") no-repeat -10000px -1000px,url("../images/g14.png") no-repeat -10000px -1000px,url("../images/g15.png") no-repeat -10000px -1000px,url("../images/g16.png") no-repeat -10000px -1000px,url("../images/g17.png") no-repeat -10000px -1000px,url("../images/g18.png") no-repeat -10000px -1000px,url("../images/page1.jpg") no-repeat -10000px -1000px,url("../images/p4_pic1.jpg") no-repeat -10000px -1000px,url("../images/p4_pic2.png") no-repeat -10000px -1000px,url("../images/p6_pic1.png") no-repeat -10000px -1000px,url("../images/p6_pic2.png") no-repeat -10000px -1000px,url("../images/p6_pic3.png") no-repeat -10000px -1000px,url("../images/f_bg.jpg") no-repeat -10000px -1000px,url("../images/f_mask1.png") no-repeat -10000px -1000px,url("../images/f_mask2.png") no-repeat -10000px -1000px,url("../images/f_close.png") no-repeat -10000px -1000px,url("../images/f_icon.png") no-repeat -10000px -1000px,url("../images/p2_pic1.png") no-repeat -10000px -1000px,url("../images/p2_pic5.png") no-repeat -10000px -1000px,url("../images/p2_pic2.png") no-repeat -10000px -1000px,url("../images/p2_pic6.png") no-repeat -10000px -1000px,url("../images/p2_pic3.png") no-repeat -10000px -1000px,url("../images/p2_pic4.png") no-repeat -10000px -1000px,url("../images/c_pic1.png") no-repeat -10000px -1000px,url("../images/g_pic5.png") no-repeat -10000px -1000px,url("../images/a2.png") no-repeat -10000px -1000px,url("../images/b2.png") no-repeat -10000px -1000px,url("../images/d2.png") no-repeat -10000px -1000px,url("../images/g_pic3.png") no-repeat -10000px -1000px,url("../images/g_pic2.png") no-repeat -10000px -1000px,url("../images/s1.png") no-repeat -10000px -1000px,url("../images/s2.png") no-repeat -10000px -1000px,url("../images/s3.png") no-repeat -10000px -1000px,url("../images/s4.png") no-repeat -10000px -1000px,url("../images/s5.png") no-repeat -10000px -1000px,url("../images/s6.png") no-repeat -10000px -1000px,url("../images/s7.png") no-repeat -10000px -1000px,url("../images/s8.png") no-repeat -10000px -1000px,url("../images/s9.png") no-repeat -10000px -1000px,url("../images/s10.png") no-repeat -10000px -1000px,url("../images/s11.png") no-repeat -10000px -1000px,url("../images/s12.png") no-repeat -10000px -1000px,url("../images/s13.png") no-repeat -10000px -1000px,url("../images/s14.png") no-repeat -10000px -1000px,url("../images/s15.png") no-repeat -10000px -1000px,url("../images/s16.png") no-repeat -10000px -1000px,url("../images/s17.png") no-repeat -10000px -1000px,url("../images/s18.png") no-repeat -10000px -1000px,url("../images/p5_pic1.png") no-repeat -10000px -1000px,url("../images/p5_pic5.png") no-repeat -10000px -1000px,url("../images/p5_pic2.png") no-repeat -10000px -1000px,url("../images/p5_pic6.png") no-repeat -10000px -1000px,url("../images/p5_pic3.png") no-repeat -10000px -1000px,url("../images/p5_pic4.png") no-repeat -10000px -1000px,url("../images/p5_pic7.png") no-repeat -10000px -1000px,url("../images/p6_pic1.png") no-repeat -10000px -1000px,url("../images/p6_pic2.png") no-repeat -10000px -1000px,url("../images/p6_pic3.png") no-repeat -10000px -1000px,url("../images/p7_pic1.jpg") no-repeat -10000px -1000px,url("../images/p7_pic2.png") no-repeat -10000px -1000px,url("../images/p8_pic1.jpg") no-repeat -10000px -1000px,url("../images/p8_pic2.png") no-repeat -10000px -1000px,url("../images/p9_bg1.jpg") no-repeat -10000px -1000px,url("../images/p9_pic2.png") no-repeat -10000px -1000px,url("../images/p10_pic1.jpg") no-repeat -10000px -1000px,url("../images/p10_bjl.png") no-repeat -10000px -1000px,url("../images/p10_bp.png") no-repeat -10000px -1000px,url("../images/p10_xlx.png") no-repeat -10000px -1000px,url("../images/p_colse.png") no-repeat -10000px -1000px,url("../images/p11_pic1.jpg") no-repeat -10000px -1000px,url("../images/p11_pic3.png") no-repeat -10000px -1000px,url("../images/p11_pic4.png") no-repeat -10000px -1000px,url("../images/p11_pic8.png") no-repeat -10000px -1000px,url("../images/p11_pic6.png") no-repeat -10000px -1000px,url("../images/p11_pic10.png") no-repeat -10000px -1000px,url("../images/p11_pic9.png") no-repeat -10000px -1000px,url("../images/p11_pic7.png") no-repeat -10000px -1000px,url("../images/p12_pic1.jpg") no-repeat -10000px -1000px,url("../images/p12_pic2.png") no-repeat -10000px -1000px,url("../images/p13_pic1.png") no-repeat -10000px -1000px,url("../images/p13_pic2.png") no-repeat -10000px -1000px,url("../images/p13_pic3.png") no-repeat -10000px -1000px,url("../images/p13_pic4.png") no-repeat -10000px -1000px,url("../images/p14_pic1.jpg") no-repeat -10000px -1000px,url("../images/p14_pic2.png") no-repeat -10000px -1000px,url("../images/p14_pic3.png") no-repeat -10000px -1000px,url("../images/p16_pic1.jpg") no-repeat -10000px -1000px,url("../images/p16_pic2.png") no-repeat -10000px -1000px,url("../images/p16_pic3.png") no-repeat -10000px -1000px,url("../images/f_close.png") no-repeat -10000px -1000px,url("../images/p19_pic1.png") no-repeat -10000px -1000px,url("../images/p19_pic3.png") no-repeat -10000px -1000px,url("../images/p19_pic2.png") no-repeat -10000px -1000px,url("../images/p19_pic4.png") no-repeat -10000px -1000px,url("../images/p19_pic5.png") no-repeat -10000px -1000px,url("../images/p20_pic1.png") no-repeat -10000px -1000px,url("../images/p20_pic4.png") no-repeat -10000px -1000px,url("../images/p20_pic5.png") no-repeat -10000px -1000px,url("../images/p20_pic6.png") no-repeat -10000px -1000px,url("../images/p20_pic2.png") no-repeat -10000px -1000px,url("../images/p20_pic7.png") no-repeat -10000px -1000px,url("../images/p20_pic8.png") no-repeat -10000px -1000px,url("../images/p20_pic3.png") no-repeat -10000px -1000px,url("../images/p20_pic9.png") no-repeat -10000px -1000px,url("../images/p20_pic10.png") no-repeat -10000px -1000px,url("../images/p21_pic1.jpg") no-repeat -10000px -1000px,url("../images/p21_pic2.png") no-repeat -10000px -1000px,url("../images/p21_pic3.png") no-repeat -10000px -1000px,url("../images/p22_pic1.jpg") no-repeat -10000px -1000px,url("../images/p22_pic2.png") no-repeat -10000px -1000px,url("../images/p22_pic3.png") no-repeat -10000px -1000px,url("../images/p24_pic1.jpg") no-repeat -10000px -1000px,url("../images/p24_pic3.png") no-repeat -10000px -1000px,url("../images/p24_pic2.png") no-repeat -10000px -1000px,url("../images/p24_pic4.png") no-repeat -10000px -1000px,url("../images/p25_pic1.jpg") no-repeat -10000px -1000px,url("../images/p25_pic2.png") no-repeat -10000px -1000px,url("../images/p25_pic3.png") no-repeat -10000px -1000px,url("../images/p25_pic4.png") no-repeat -10000px -1000px,url("../images/p25_pic5.png") no-repeat -10000px -1000px,url("../images/p25_pic6.png") no-repeat -10000px -1000px;
+    width: 0;
+    height: 0;
+}
+
+
+/*单页样式*/
+/*第一页*/
+.page1_bg{
+    width:100%;
+    height: 100%;
+    background-image:url("../images/page1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+/*第三页*/
+.page3_bg{
+    width:100%;
+    height: 100%;
+    background-image:url("../images/page3.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+/*
+.page3_bg2{
+    position: absolute;
+    top:0;left:0;
+    width:100%;
+    height: 100%;
+    background-image:url("../images/page3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    animation: shake 3s cubic-bezier(.36, .07, .19, .97) both;
+}
+*/
+
+@keyframes shake {
+    10%, 90% {transform: translate3d(-1px, 0, 0);}
+
+    20%, 80% {transform: translate3d(2px, 0, 0);}
+
+    30%, 50%, 70% {transform: translate3d(-4px, 0, 0);}
+
+    40%, 60% {transform: translate3d(4px, 0, 0);}
+}
+/*第四页*/
+.page4_bg{
+    width:100%;
+    height: 100%;
+    background-image:url("../images/p4_pic1.jpg");
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size:cover;
+}
+
+.page4_bg .dialog_box{
+    width:5.75rem;
+    height: 1.89rem;
+    background:url("../images/p4_pic2.png") no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    bottom:0.1rem;
+    left:50%;
+    margin-left:-2.875rem;
+}
+.page4_bg .b_box{
+    width:5.75rem;
+    height: 1.89rem;
+    background:url("../images/p4_pic3.png") no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+/*第六页样式*/
+.page6_bg{
+    width:100%;
+    height: 100%;
+    background:url("../images/p6_pic1.png") no-repeat;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page6_bg .btn1{
+    width:4.78rem;
+    height: 2.07rem;
+    background:url("../images/p6_pic2.png") no-repeat;
+    background-size:100% 100%;
+    margin:0 auto;
+}
+.page6_bg .btn2{
+    width:4.73rem;
+    height: 1.98rem;
+    background:url("../images/p6_pic3.png") no-repeat;
+    background-size:100% 100%;
+    margin:1rem auto 0;
+}
+
+/*第十一页，硬闯页面*/
+.page11_bg{
+    width:100%;
+    height: 100%;
+    background-image:url("../images/dadou.gif");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+    position: fixed;
+    top:0;left:0;
+}
+
+
+/*弹窗样式*/
+.mask_bg{
+    width:100%;
+    height: 100%;
+    background-image:url("../images/f_bg.jpg");
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mask_bg .m_bg{
+    width:5.85rem;
+    height: 8.1rem;
+    background:url("../images/f_mask1.png") no-repeat;
+    background-size:100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.mask_bg .m_bg2{
+    width:6.36rem;
+    height: 8.07rem;
+    background:url("../images/f_mask2.png") no-repeat;
+    background-size:100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.mask_bg .m_bg .mCloseBtn{
+    width: 0.73rem;
+    height: 1.05rem;
+    background: url("../images/f_close.png") no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    top:-1.05rem;
+}
+.mask_bg .m_bg .sureBtn{
+    width:2.06rem;
+    height: 0.73rem;
+    background:url("../images/f_icon.png") no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    bottom:0.75rem;
+}
+.mask_bg .arrow{
+    width:1.91rem;
+    height: 0.68rem;
+    background:url("../images/p16_pic3.png") no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    bottom:0.58rem;
+}
+
+.click_btn{
+    width:0.91rem;
+    height: 1.13rem;
+    background:url("../images/p_click.png") no-repeat;
+    background-size:100% 100%;
+    animation:mymove 4s infinite;
+    animation-direction:alternate;/*轮流反向播放动画。*/
+    animation-timing-function: ease-in-out; /*动画的速度曲线*/
+    position: fixed;
+    bottom:0.6rem;
+    right: 0.4rem;
+}
+.page4_bg .click_btn{
+    position: fixed;
+    right:0.2rem;
+    bottom:2.2rem;
+}
+@keyframes mymove
+{
+    0%{
+        transform: scale(1);  /*开始为原始大小*/
+    }
+    25%{
+        transform: scale(1.1); /*放大1.1倍*/
+    }
+    50%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(1.1);
+    }
+
+}
+
